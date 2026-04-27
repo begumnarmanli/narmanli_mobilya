@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Narmanlı Mobilya</title>
+
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="192x192"
+      href="resimler/hakkimizda/logo-acik.webp"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="512x512"
+      href="resimler/hakkimizda/logo-acik.webp"
+    />
+
+    <link rel="apple-touch-icon" href="resimler/hakkimizda/logo-acik.webp" />
+
+    <meta name="msapplication-TileImage" content="resimler/hakkimizda/logo-acik.webp" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+      </a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a href="index.html" class="active">Anasayfa</a>
+        <div class="dropdown">
+          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <ul class="dropdown-content">
+            <li><a href="products-mutfak.html">MUTFAK</a></li>
+            <li><a href="products-banyo.html#banyo">BANYO</a></li>
+            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
+            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
+            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
+            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
+            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
+            <li>
+              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropbtn">Hakkımızda</a>
+          <ul class="dropdown-content">
+            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
+            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html">MİSYONUMUZ</a></li>
+            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
+            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+          </ul>
+        </div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-mobile"
+          >Teklif Alın</a
+        >
+      </nav>
+      <a
+        href="https://wa.me/905057379044"
+        target="_blank"
+        rel="noopener"
+        class="whatsapp-btn whatsapp-desktop"
+        >Teklif Alın</a
+      >
+    </header>
+
+  <section class="home">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline
+        preload="metadata" 
+        class="bg-video"
+        poster="resimler/anasayfa/video-kapak.webp"
+        fetchpriority="high"
+      >
+        <source
+          src="resimler/anasayfa/0.50-Minyatür-Insanlar-ıos-uyumlu.mp4"
+          type="video/mp4"
+        />
+        Tarayıcınız bu videoyu desteklemiyor.
+      </video>
+    </section>
+
+    <section class="features" data-scroll-color="light">
+      <div class="features-header">
+        <h2>Öne Çıkan Özellikler</h2>
+        <p>
+          Modern yaşamın ihtiyaçlarına uygun tasarlanmış mobilyalarımız, en son
+          teknoloji ve yüksek kalite malzemelerle üretilmektedir.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Premium Malzemeler</h3>
+          <p>
+            Mat dokulu ahşap yüzeyler ve paslanmaz çelik detaylarla premium
+            kalite.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <i class="fas fa-door-closed"></i>
+          <h3>Soft-Close Sistem</h3>
+          <p>Yumuşak kapanma özellikli çekmece ve kapak sistemleri.</p>
+        </div>
+
+        <div class="feature-box">
+          <i class="fa-solid fa-ruler-combined"></i>
+          <h3>Modüler Tasarım</h3>
+          <p>Her alana uyum sağlayan özelleştirilebilir modüler yapı.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu" data-scroll-color="dark">
+      <h1 class="heading">EV VE YAŞAM KOLEKSİYONLARIMIZ</h1>
+      <p>
+        Evinizin her alanına uygun mobilya çözümlerimizi keşfedin. Modern
+        mutfaklardan şık banyolara, kitaplıklardan gardroplara kadar geniş
+        koleksiyonumuzla yanınızdayız.
+      </p>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="resimler/anasayfa/anasayfa-mutfak.webp" 
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Mutfak Koleksiyonu"
+            />
+            <h3 class="menu-category">MODERN SERİ</h3>
+            <p class="box-text">
+              Minimalist çizgiler ve modern detaylarla tasarlanmış mutfak
+              dolapları.
+            </p>
+            <a href="products-mutfak.html" class="koleksiyon-btn"
+              >Koleksiyonu İncele</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="resimler/anasayfa/anasayfa-banyo.webp" 
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Banyo Koleksiyonu"
+            />
+            <h3 class="menu-category">FONKSİYONEL ŞIKLIK</h3>
+            <p class="box-text">
+              Şık ve fonksiyonel banyo dolapları ile banyonuza değer katın.
+            </p>
+            <a href="products-banyo.html" class="koleksiyon-btn"
+              >Koleksiyonu İncele</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="resimler/anasayfa/anasayfa-dusme-yatak.webp" 
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Düşme Yatak Koleksiyonu"
+            />
+            <h3 class="menu-category">AKILLI DÜZEN</h3>
+            <p class="box-text">
+              Akıllı düzenleme sistemleri ile alanınızı en iyi şekilde
+              değerlendirin.
+            </p>
+            <a href="products-dusmeyatak.html" class="koleksiyon-btn"
+              >Koleksiyonu İncele</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="resimler/anasayfa/anasayfa-gardırop.webp" 
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Gardırop Koleksiyonu"
+            />
+            <h3 class="menu-category">ZARİF KARŞILAMA</h3>
+            <p class="box-text">
+              Evinize düzen ve estetik katacak modern tasarım.
+            </p>
+            <a href="products-gardırop.html" class="koleksiyon-btn"
+              >Koleksiyonu İncele</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" data-scroll-color="light">
+      <h1 class="heading"><span>Hakkımızda</span></h1>
+      <div class="row">
+        <div class="image">
+          <img src="resimler/anasayfa/about.webp" width="655" height="372" alt="Hakkımızda" loading="lazy">
+        </div>
+        <div class="content">
+          <h3>Mükemmelliği Tasarımlarımızda Bulun!</h3>
+          <p>
+            Narmanlı Mobilya, 2000 yılından bu yana sektördeki tecrübesi ve
+            kaliteli işçilik anlayışıyla mobilya üretiminde öncü bir markadır.
+            Misyonumuz, müşterilerimizin ihtiyaçlarına en uygun tasarımları
+            sunarak, yaşam alanlarını estetik ve fonksiyonellikle
+            buluşturmaktır.
+          </p>
+          <p>
+            Ürünlerimizde kullanılan yüksek kaliteli malzemeler, uzun ömürlü ve
+            çevre dostu çözümler sunmamıza olanak tanımaktadır.
+          </p>
+          <p>
+            Narmanlı Mobilya olarak, sadece bir mobilya üreticisi değil, aynı
+            zamanda yaşam alanlarınıza değer katan bir çözüm ortağı olmayı
+            amaçlıyoruz. Yüksek müşteri memnuniyeti anlayışımızla, her
+            projemizde müşteri beklentilerini aşmayı ilke ediniyoruz.
+          </p>
+          <p>
+            Siz de Narmanlı Mobilya ile evinizde veya ofisinizde mükemmel bir
+            değişim yaratmak isterseniz, yenilikçi ve şık tasarımlarımızı
+            keşfetmek için bizimle iletişime geçebilirsiniz.
+          </p>
+          <a href="vizyon_misyon.html" class="kesfet-btn">Daha Fazla Keşfet</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="review" id="review" data-scroll-color="dark">
+      <h1 class="yorumlar-heading">Kullanıcı <span>Yorumları</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <p>
+            Narmanlı Mobilya'dan aldığım oturma odası takımı tam istediğim gibi
+            oldu. Hem şık hem de çok rahat. Hem tasarım hem de kalite açısından
+            çok memnun kaldım, kesinlikle tavsiye ederim!
+          </p>
+          <h3>Elif SİPAHİ</h3>
+        </div>
+        <div class="box">
+          <p>
+            Narmanlı Mobilya'dan mutfak dolapları aldım ve sonuç harika! Hem şık
+            hem de çok kullanışlı. Kurulum hızlı ve profesyoneldi. Evinize değer
+            katacak kaliteli ürünler sunuyorlar.
+          </p>
+          <h3>Gökhan DEMİR</h3>
+        </div>
+        <div class="box">
+          <p>
+            Narmanlı Mobilya'dan aldığım yatak odası takımı mükemmel. Modern
+            tasarımı ve kaliteli malzemeleri ile hayalimdeki gibi oldu. Hem
+            kullanım rahatlığı hem de şıklığıyla çok memnun kaldım.
+          </p>
+          <h3>Selin APAÇIK</h3>
+        </div>
+      </div>
+    </section>
+
+   <main> <section class="contact" id="contact" data-scroll-color="light">
+    <h2 class="heading">Sorularınız İçİn <span>Bize Ulaşın</span></h2>
+    
+    <div class="row">
+      <iframe
+        title="Narmanlı Mobilya Gaziantep Mağaza Konumu"
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12037.852231349814!2d28.985091699999998!3d41.03700175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2zVGFrc2ltIE1leWRhbsSxLCBHw7xtw7zFn3N1eXUsIDM0NDM1IEJleW_En2x1L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1652655842555!5m2!1str!2str"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <form>
+        <h3>Bİze Ulaşın</h3>
+        
+        <div class="inputBox">
+          <i class="fas fa-user" aria-hidden="true"></i>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="İsim" 
+            aria-label="İsim"
+          />
+        </div>
+
+        <div class="inputBox">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail"
+            required
+            aria-label="E-posta adresi"
+            title="Lütfen geçerli bir e-posta adresi giriniz."
+          />
+        </div>
+
+        <div class="inputBox">
+          <i class="fas fa-phone" aria-hidden="true"></i>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Telefon Numarası"
+            required
+            pattern="[0-9]{10,15}"
+            aria-label="Telefon numarası"
+            title="Lütfen sadece 10 ila 15 hane arasında rakam giriniz."
+          />
+        </div>
+
+        <input type="submit" class="btn" value="Hemen İletişime Geçin" />
+      </form>
+    </div>
+  </section>
+</main>
+
+    <section class="blogs" id="blogs" data-scroll-color="dark">
+      <h1 class="blogs-heading">İlham<span> Veren Yazılar</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="resimler/anasayfa/blog_1.webp" width="590" height="350" loading="lazy" alt="blog" />
+          </div>
+          <div class="content">
+            <a href="#" class="title"
+              >Mutfak Kapaklarıyla Şıklık Nasıl Sağlanır?</a
+            >
+            <span>by admin / 23st may, 2019</span>
+            <p>
+              Mutfak mobilyası kapakları, hem estetik hem de fonksiyonellik
+              açısından mutfak tasarımının en önemli unsurlarından biridir.
+              Doğru malzeme ve tasarım seçimiyle, mutfağınızda şıklığı ve düzeni
+              bir arada yakalayabilirsiniz.
+            </p>
+            <a href="#" class="blog-btn">Devamını Oku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="resimler/anasayfa/blog_2.webp" width="590" height="350" loading="lazy" alt="blog" />
+          </div>
+          <div class="content">
+            <a href="#" class="title"
+              >Komodin Seçiminde Nelere Dikkat Edilmeli?</a
+            >
+            <span>by admin / 10st July, 2021</span>
+            <p>
+              Komodin seçerken, hem estetik hem de fonksiyonelliği göz önünde
+              bulundurmak önemlidir. Doğru boyut, odanızın havasını
+              değiştirebilir ve ihtiyacınıza göre çekmece veya raf gibi ek
+              depolama alanları sunarak düzeni sağlar.
+            </p>
+            <a href="#" class="blog-btn">Devamını Oku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="resimler/anasayfa/blog_3.webp" width="590" height="350" loading="lazy" alt="blog" />
+          </div>
+          <div class="content">
+            <a href="#" class="title"
+              >Banyo Dolabı Seçerken Nelere Dikkat Edilmeli?</a
+            >
+            <span>by admin / 02st Jan, 2024</span>
+            <p>
+              Banyo dolabı seçerken, suya dayanıklı malzemeler tercih etmek uzun
+              ömürlü kullanım sağlar. Ayrıca, alanı verimli kullanabilmek için
+              kompakt tasarımlar ve raf ya da çekmece gibi depolama çözümleri
+              önemlidir. Banyo dolabınızın rengi ve tarzı, banyonuzun genel
+              dekorasyonu ile uyumlu olmalı, aynı zamanda işlevsel bir alan
+              yaratmalıdır.
+            </p>
+            <a href="#" class="blog-btn">Devamını Oku</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" data-scroll-color="light">
+      <div class="credit">
+        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları
+        Saklıdır.
+      </div>
+    </section>
+
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
+    </button>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,653 @@
+body.no-scroll,
+html.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.header {
+  background-color: var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 5% 0.3rem 2%;
+  margin: 0;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 1rem;
+}
+
+.header .logo img {
+    width: 140px !important;
+    height: auto !important; 
+    display: block;
+    object-fit: contain;
+}
+
+#menu-btn {
+  display: block;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.header .navbar {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: var(--black-color);
+  height: calc(100vh - 80px);
+  width: 100vw;
+  display: block;
+  transition: right 0.5s ease-out;
+  border: 2px solid var(--main-color);
+  overflow-y: auto;
+}
+
+.header .navbar.active {
+  right: 0;
+}
+
+.whatsapp-desktop {
+  display: none;
+}
+
+.whatsapp-mobile {
+  background-color: var(--main-color);
+  color: var(--black-color) !important;
+  width: 15rem;
+  border-radius: 5px;
+  border-bottom: none;
+  text-align: center;
+  margin-top: 20px;
+  padding: 1rem;
+  display: block;
+  margin-left: 2rem;
+  margin-right: auto;
+}
+
+.whatsapp-mobile::after {
+  content: none !important;
+}
+
+.products {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 5%;
+}
+
+.products[data-scroll-color="dark"] {
+  background-color: var(--main-color);
+  color: var(--black-color);
+}
+
+.products[data-scroll-color="light"] {
+  background-color: var(--black-color);
+  color: var(--main-color);
+}
+
+.products[data-scroll-color="light"] .product-list li::before {
+  color: var(--main-color);
+}
+
+.product-box-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.box-product-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.box-product-item .image {
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.box-product-item .image img {
+  width: 90%;
+  aspect-ratio: 16 / 9;
+  object-fit: fill;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.product-box-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: inherit;
+  text-align: center;
+}
+
+.product-list {
+  margin-bottom: 2rem;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.product-list li {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2.5rem;
+  color: inherit;
+}
+
+.product-list li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  color: var(--black-color);
+}
+
+.product-info-btn {
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  align-self: center;
+  transition: all 0.3s ease;
+}
+
+.products[data-scroll-color="dark"] .product-info-btn {
+  background-color: var(--black-color);
+  color: var(--main-color);
+}
+
+.products[data-scroll-color="light"] .product-info-btn {
+  background-color: var(--main-color);
+  color: var(--black-color);
+}
+
+.products-whatsapp-btn {
+  background-color: var(--main-color);
+  color: var(--black-color);
+  padding: 0.3rem 1.5rem;
+  border-radius: 1rem;
+  border-bottom: none;
+  transform: translateY(0);
+  transition: all 0.2s ease-in;
+}
+
+.product-footer {
+  padding: 2rem 5%;
+  text-align: center;
+  background-color: var(--black-color);
+  color: var(--main-color);
+}
+
+.product-credit {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
+.product-credit span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.products-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  width: fit-content;
+  margin: 50px auto 3rem auto;
+  padding: 0.8rem 2.5rem;
+  background-color: var(--black-color);
+  color: var(--main-color);
+  border-radius: 1.8rem;
+}
+
+.principles-list {
+  margin-top: 15px;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.principle-item {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  padding-left: 2.5rem;
+  position: relative;
+  color: inherit;
+}
+
+.principle-item::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  color: inherit;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2em;
+}
+
+.principle-item strong {
+  color: inherit;
+  font-weight: 700;
+}
+
+.urun {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: inherit;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    background-color: var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin: 0;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header .logo {
+    margin-right: 0;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  .header .navbar {
+    position: static;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    gap: clamp(0.5rem, 1.5vw, 2rem);
+    border: none;
+    overflow: visible;
+    background: transparent;
+    margin-top: 0;
+    padding: 0 1rem;
+  }
+
+  .header .navbar > a {
+    padding: 0.8rem clamp(0.3rem, 0.8vw, 1rem);
+    border: none;
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    white-space: nowrap;
+  }
+  .header .navbar > a::after {
+    content: none;
+  }
+
+  .header .navbar .dropdown {
+    position: relative;
+    border: none;
+  }
+
+  .header .navbar .dropdown .dropbtn {
+    padding: 0.8rem clamp(0.3rem, 0.8vw, 1rem);
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+  }
+
+  .header .navbar .dropdown .dropbtn::after {
+    content: "\f107";
+    transform: none;
+  }
+
+  .header .navbar .dropdown.active .dropbtn::after {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-content {
+    position: absolute;
+    min-width: 134px;
+    top: 5.8rem;
+    left: 0;
+    border: 2px solid var(--main-color);
+    z-index: 100;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--main-color);
+    transition:
+      background-color 0.3s ease,
+      padding-left 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    padding-left: 1.5rem;
+  }
+
+  .header .navbar .dropdown.active .dropdown-content {
+    display: block;
+    max-height: 500px;
+    background-color: var(--black-color);
+    border: 1px solid var(--main-color);
+  }
+
+  .whatsapp-mobile {
+    display: none;
+  }
+
+  .whatsapp-desktop {
+    display: block;
+    margin-left: auto;
+    flex-shrink: 0;
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+    background-color: var(--main-color);
+    color: var(--black-color);
+    border-radius: 5px;
+    white-space: nowrap;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .whatsapp-desktop:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(128, 0, 32, 0.3);
+  }
+
+  .products {
+    padding: 5rem 8%;
+  }
+
+  .box-product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .box-product-item .image img {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .product-box-head {
+    display: none;
+  }
+
+  .product-box-bottom {
+    flex: none;
+    min-height: auto;
+    padding-top: 0;
+    max-width: 100%;
+  }
+
+  .image-group {
+    flex: none;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-group .image {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .image-group .second-image {
+    margin-top: 0;
+  }
+
+  .product-info-btn {
+    align-self: center;
+  }
+
+  .product-title {
+    text-align: center;
+    font-size: clamp(3.5rem, 3vw, 3.5rem);
+  }
+
+  .product-list {
+    text-align: left;
+  }
+
+  .product-list li {
+    font-size: 1.6rem;
+  }
+  .principle-item {
+    font-size: 2rem;
+  }
+  .product-credit {
+    font-size: 2rem;
+  }
+
+  .urun {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #menu-btn {
+    display: none;
+  }
+
+  .header .navbar {
+    position: static;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    border: none;
+    overflow: visible;
+  }
+
+  .whatsapp-mobile {
+    display: none;
+  }
+
+  .whatsapp-desktop {
+    display: block;
+    margin-left: auto;
+    flex-shrink: 0;
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+    background-color: var(--main-color);
+    color: var(--black-color);
+    border-radius: 5px;
+    white-space: nowrap;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .whatsapp-desktop:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(128, 0, 32, 0.3);
+  }
+
+  .dropdown-content {
+    position: absolute;
+    min-width: 170px;
+    top: 7.3rem;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: clamp(1.6rem, 1.8vw, 2rem);
+    border-bottom: 1px solid var(--main-color);
+    transition:
+      background-color 0.3s ease,
+      padding-left 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    padding-left: 1.5rem;
+  }
+
+  .header .navbar .dropdown.active .dropdown-content {
+    display: block;
+    max-height: 500px;
+    background-color: var(--black-color);
+    border: 1px solid var(--main-color);
+    top: 7.7rem;
+  }
+
+  .products {
+    min-height: 80vh;
+    padding: 7rem 10%;
+  }
+
+  .product-box-container {
+    max-width: 140rem;
+  }
+
+  .box-product-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 4rem 0;
+    text-align: left;
+  }
+
+  .box-product-item .image img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .box-product-item .image {
+    flex: 1 1 45%;
+    max-width: 70rem;
+  }
+
+  .product-box-bottom {
+    flex: 1 1 50%;
+    min-height: auto;
+    padding-top: 0;
+  }
+
+  .product-box-bottom .info {
+    width: 100%;
+  }
+
+  .product-title {
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+  }
+
+  .product-list li {
+    font-size: clamp(1.8rem, 2vw, 2rem);
+    line-height: 4.5rem;
+  }
+
+  .product-list li::before {
+    font-size: 1.8rem;
+  }
+
+  .product-info-btn {
+    font-size: clamp(1.6rem, 1.8vw, 2rem);
+    padding: clamp(1rem, 1.2vw, 1.5rem) clamp(2.5rem, 3vw, 3.5rem);
+    align-self: flex-end;
+    margin-left: auto;
+  }
+
+  .product-footer {
+    padding: 1rem 10%;
+  }
+
+  .product-credit {
+    font-size: 2rem;
+  }
+
+  .image-group {
+    flex: none;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .image-group .image {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .image-group .second-image {
+    margin-top: 0;
+  }
+
+  .about .heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    display: block;
+  }
+
+  #kurumsal-ilkeler .principles-list .principle-item {
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  #Vizyon .principles-list .principle-item {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  #backToTop {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    bottom: 10px;
+    right: 20px;
+  }
+}
