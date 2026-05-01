@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,70 +17,167 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Banyo Dolapları</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-banyo">
+      Banyo Dolapları | Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-
-      <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
     <section class="products" id="banyo-dolaplari-1" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">BANYONUZDA MODERN VE ŞIK BİR DOKUNUŞ</h2>
+          <h2 class="product-title" data-i18n="banyo-prod1-title">
+            BANYONUZDA MODERN VE ŞIK BİR DOKUNUŞ
+          </h2>
           <div class="image">
             <img
-              src="resimler/banyo/banyo-1.webp" width="590" height="350" loading="lazy"
+              src="resimler/banyo/banyo-1.webp"
+              width="590"
+              height="350"
+              loading="lazy"
               alt="Elegance Banyo Dolabı"
             />
           </div>
@@ -82,16 +185,28 @@
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Akıllı ayna teknolojisiyle banyonuza derinlik ve modern bir hava katın</li>
-                <li>Füme tonların zarafetiyle banyonuzu sıradanlıktan kurtarın</li>
-                <li>Birinci sınıf MDF lam yapısı sayesinde uzun ömürlü ve güvenli kullanım</li>
-                <li>Fonksiyonel çekmece ve açık raf sistemleriyle banyo düzeninizi koruyun</li>
+                <li data-i18n="banyo-prod1-li1">
+                  Akıllı ayna teknolojisiyle banyonuza derinlik ve modern bir
+                  hava katın
+                </li>
+                <li data-i18n="banyo-prod1-li2">
+                  Füme tonların zarafetiyle banyonuzu sıradanlıktan kurtarın
+                </li>
+                <li data-i18n="banyo-prod1-li3">
+                  Birinci sınıf MDF lam yapısı sayesinde uzun ömürlü ve güvenli
+                  kullanım
+                </li>
+                <li data-i18n="banyo-prod1-li4">
+                  Fonksiyonel çekmece ve açık raf sistemleriyle banyo düzeninizi
+                  koruyun
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -102,24 +217,44 @@
     <section class="products" id="banyo-dolaplari-2" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOĞANIN SICAKLIĞI BANYONUZDA</h2>
+          <h2 class="product-title" data-i18n="banyo-prod2-title">
+            DOĞANIN SICAKLIĞI BANYONUZDA
+          </h2>
           <div class="image">
-            <img src="resimler/banyo/banyo-2.webp" width="590" height="350" loading="lazy" alt="Elegance Banyo Dolabı" />
+            <img
+              src="resimler/banyo/banyo-2.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Banyo Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Meşe tonlarının doğal sıcaklığıyla banyonuzda spa ferahlığı yaratın</li>
-                <li>Modern dokunmatik ayna ile banyonuza derinlik ve şıklık katın</li>
-                <li>Nemden etkilenmeyen birinci sınıf lake ve MDF yapısıyla uzun ömürlü kullanım</li>
-                <li>Fonksiyonel saklama alanlarıyla banyo düzeninizi koruyun ve konforlu kullanım sağlayın</li>
+                <li data-i18n="banyo-prod2-li1">
+                  Meşe tonlarının doğal sıcaklığıyla banyonuzda spa ferahlığı
+                  yaratın
+                </li>
+                <li data-i18n="banyo-prod2-li2">
+                  Modern dokunmatik ayna ile banyonuza derinlik ve şıklık katın
+                </li>
+                <li data-i18n="banyo-prod2-li3">
+                  Nemden etkilenmeyen birinci sınıf lake ve MDF yapısıyla uzun
+                  ömürlü kullanım
+                </li>
+                <li data-i18n="banyo-prod2-li4">
+                  Fonksiyonel saklama alanlarıyla banyo düzeninizi koruyun ve
+                  konforlu kullanım sağlayın
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -130,24 +265,45 @@
     <section class="products" id="banyo-dolaplari-3" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">BANYONUZDA TASARIMIN VE ASALETİN BULUŞMASI</h2>
+          <h2 class="product-title" data-i18n="banyo-prod3-title">
+            BANYONUZDA TASARIMIN VE ASALETİN BULUŞMASI
+          </h2>
           <div class="image">
-            <img src="resimler/banyo/banyo-3.webp" width="590" height="350" loading="lazy" alt="Elegance Banyo Dolabı" />
+            <img
+              src="resimler/banyo/banyo-3.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Banyo Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Banyonuzun mimarisini özel tasarım, dokunmatik LED ayna ile değiştirin</li>
-                <li>Şık mozaik dokusuyla banyonuza derinlik ve modern bir hava katın</li>
-                <li>Leke tutmayan ve kolay temizlenebilen yüksek kaliteli lake kaplama</li>
-                <li>Fonksiyonel ve sessiz açılır-kapanır çekmece sistemleriyle banyo düzeninizi koruyun</li>
+                <li data-i18n="banyo-prod3-li1">
+                  Banyonuzun mimarisini özel tasarım, dokunmatik LED ayna ile
+                  değiştirin
+                </li>
+                <li data-i18n="banyo-prod3-li2">
+                  Şık mozaik dokusuyla banyonuza derinlik ve modern bir hava
+                  katın
+                </li>
+                <li data-i18n="banyo-prod3-li3">
+                  Leke tutmayan ve kolay temizlenebilen yüksek kaliteli lake
+                  kaplama
+                </li>
+                <li data-i18n="banyo-prod3-li4">
+                  Fonksiyonel ve sessiz açılır-kapanır çekmece sistemleriyle
+                  banyo düzeninizi koruyun
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -158,24 +314,45 @@
     <section class="products" id="banyo-dolaplari-4" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">BANYONUZDA HUZUR VEREN DOĞAL DOKUNUŞ</h2>
+          <h2 class="product-title" data-i18n="banyo-prod4-title">
+            BANYONUZDA HUZUR VEREN DOĞAL DOKUNUŞ
+          </h2>
           <div class="image">
-            <img src="resimler/banyo/banyo-4.webp" width="590" height="350" loading="lazy" alt="Elegance Banyo Dolabı" />
+            <img
+              src="resimler/banyo/banyo-4.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Banyo Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Ahşabın sıcaklığını modern hatlarla birleştirerek banyonuzda spa atmosferi yaratın</li>
-                <li>Yüksek kaliteli mermer tezgah ile estetiği ve sağlamlığı bir arada yaşayın</li>
-                <li>Modern siyah batarya ve aksesuarlarla banyonuzun karakterini vurgulayın</li>
-                <li>Frenli ray sistemine sahip geniş çekmeceler ile tüm banyo eşyalarınızı düzenle saklayın</li>
+                <li data-i18n="banyo-prod4-li1">
+                  Ahşabın sıcaklığını modern hatlarla birleştirerek banyonuzda
+                  spa atmosferi yaratın
+                </li>
+                <li data-i18n="banyo-prod4-li2">
+                  Yüksek kaliteli mermer tezgah ile estetiği ve sağlamlığı bir
+                  arada yaşayın
+                </li>
+                <li data-i18n="banyo-prod4-li3">
+                  Modern siyah batarya ve aksesuarlarla banyonuzun karakterini
+                  vurgulayın
+                </li>
+                <li data-i18n="banyo-prod4-li4">
+                  Frenli ray sistemine sahip geniş çekmeceler ile tüm banyo
+                  eşyalarınızı düzenle saklayın
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -186,10 +363,15 @@
     <section class="products" id="banyo-dolaplari-5" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">MODERN ESTETİK, MAKSİMUM KONFOR</h2>
+          <h2 class="product-title" data-i18n="banyo-prod5-title">
+            MODERN ESTETİK, MAKSİMUM KONFOR
+          </h2>
           <div class="image">
             <img
-              src="resimler/banyo/banyo-5.webp" width="590" height="350" loading="lazy"
+              src="resimler/banyo/banyo-5.webp"
+              width="590"
+              height="350"
+              loading="lazy"
               alt="Elegance Banyo Dolabı"
             />
           </div>
@@ -197,16 +379,28 @@
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Sessiz ve yavaş kapanan çekmece mekanizmalarıyla konforlu kullanımın keyfini çıkarın</li>
-                <li>Banyonuzu daha ferah gösteren, modern ve şık ayna tasarımı</li>
-                <li>Banyodaki nem ve buhardan etkilenmeyen, ömürlük kullanım sunan birinci sınıf malzeme</li>
-                <li>Banyonuzun ölçülerine ve zevkinize özel renk ve doku seçenekleri</li>
+                <li data-i18n="banyo-prod5-li1">
+                  Sessiz ve yavaş kapanan çekmece mekanizmalarıyla konforlu
+                  kullanımın keyfini çıkarın
+                </li>
+                <li data-i18n="banyo-prod5-li2">
+                  Banyonuzu daha ferah gösteren, modern ve şık ayna tasarımı
+                </li>
+                <li data-i18n="banyo-prod5-li3">
+                  Banyodaki nem ve buhardan etkilenmeyen, ömürlük kullanım sunan
+                  birinci sınıf malzeme
+                </li>
+                <li data-i18n="banyo-prod5-li4">
+                  Banyonuzun ölçülerine ve zevkinize özel renk ve doku
+                  seçenekleri
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -217,24 +411,45 @@
     <section class="products" id="banyo-dolaplari-6" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOĞANIN HUZURU, MODERM BANYONUZDA</h2>
+          <h2 class="product-title" data-i18n="banyo-prod6-title">
+            DOĞANIN HUZURU, MODERN BANYONUZDA
+          </h2>
           <div class="image">
-            <img src="resimler/banyo/banyo-6.webp" width="590" height="350" loading="lazy" alt="Elegance Banyo Dolabı" />
+            <img
+              src="resimler/banyo/banyo-6.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Banyo Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Ahşabın doğal sıcaklığı ve modern hatlarla banyonuzda spa atmosferi yaratın</li>
-                <li>Çiftler için özel tasarlanmış geniş tezgah ve ergonomik çanak lavabo kullanımı</li>
-                <li>Entegre boy dolabı ve sessiz çekmecelerle banyo düzeninizi mükemmel sağlayın</li>
-                <li>Nem ve suya dayanıklı yüksek kaliteli malzeme ile ömürlük, hijyenik kullanım</li>
+                <li data-i18n="banyo-prod6-li1">
+                  Ahşabın doğal sıcaklığı ve modern hatlarla banyonuzda spa
+                  atmosferi yaratın
+                </li>
+                <li data-i18n="banyo-prod6-li2">
+                  Çiftler için özel tasarlanmış geniş tezgah ve ergonomik çanak
+                  lavabo kullanımı
+                </li>
+                <li data-i18n="banyo-prod6-li3">
+                  Entegre boy dolabı ve sessiz çekmecelerle banyo düzeninizi
+                  mükemmel sağlayın
+                </li>
+                <li data-i18n="banyo-prod6-li4">
+                  Nem ve suya dayanıklı yüksek kaliteli malzeme ile ömürlük,
+                  hijyenik kullanım
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -245,24 +460,45 @@
     <section class="products" id="banyo-dolaplari-7" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">KLASİK ZARAFET VE NOSTALJİK DOKUNUŞ</h2>
+          <h2 class="product-title" data-i18n="banyo-prod7-title">
+            KLASİK ZARAFET VE NOSTALJİK DOKUNUŞ
+          </h2>
           <div class="image">
-            <img src="resimler/banyo/banyo-7.webp" width="590" height="350" loading="lazy" alt="Elegance Banyo Dolabı" />
+            <img
+              src="resimler/banyo/banyo-7.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Banyo Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Ahşabın doğal oyma detaylarıyla banyonuzda klasik bir saray havası yaratın</li>
-                <li>Duvardaki ahşap çıta paneller ve floral duvar kağıdı ile banyonuza derinlik katın</li>
-                <li>Yüksek kaliteli mermer yüzey ve asil pirinç musluklarla konforlu kullanım</li>
-                <li>Entegre boy dolabı ve sessiz çekmece sistemleriyle banyo düzeninizi koruyun</li>
+                <li data-i18n="banyo-prod7-li1">
+                  Ahşabın doğal oyma detaylarıyla banyonuzda klasik bir saray
+                  havası yaratın
+                </li>
+                <li data-i18n="banyo-prod7-li2">
+                  Duvardaki ahşap çıta paneller ve floral duvar kağıdı ile
+                  banyonuza derinlik katın
+                </li>
+                <li data-i18n="banyo-prod7-li3">
+                  Yüksek kaliteli mermer yüzey ve asil pirinç musluklarla
+                  konforlu kullanım
+                </li>
+                <li data-i18n="banyo-prod7-li4">
+                  Entegre boy dolabı ve sessiz çekmece sistemleriyle banyo
+                  düzeninizi koruyun
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -273,66 +509,115 @@
     <section class="products" id="banyo-dolaplari-8" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ZAMANSIZ ÇİZGİLER, FONKSİYONEL ÇÖZÜMLER</h2>
+          <h2 class="product-title" data-i18n="banyo-prod8-title">
+            ZAMANSIZ ÇİZGİLER, FONKSİYONEL ÇÖZÜMLER
+          </h2>
           <div class="image">
-            <img src="resimler/banyo/banyo-8.webp" width="590" height="350" loading="lazy" alt="Elegance Banyo Dolabı" />
+            <img
+              src="resimler/banyo/banyo-8.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Banyo Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Meşe tonlarının doğal sıcaklığıyla banyonuzda zamansız bir estetik yaratın</li>
-                <li>Küçük alanlarda bile maksimum kullanım konforu sunan akıllı tasarım</li>
-                <li>Nem ve suya dayanıklı MDF yapısı ve lake yüzeyle uzun yıllar güvenli kullanım</li>
-                <li>Geniş alt dolap ve çekmece detaylarıyla banyo düzeninizi kolayca sağlayın</li>
+                <li data-i18n="banyo-prod8-li1">
+                  Meşe tonlarının doğal sıcaklığıyla banyonuzda zamansız bir
+                  estetik yaratın
+                </li>
+                <li data-i18n="banyo-prod8-li2">
+                  Küçük alanlarda bile maksimum kullanım konforu sunan akıllı
+                  tasarım
+                </li>
+                <li data-i18n="banyo-prod8-li3">
+                  Nem ve suya dayanıklı MDF yapısı ve lake yüzeyle uzun yıllar
+                  güvenli kullanım
+                </li>
+                <li data-i18n="banyo-prod8-li4">
+                  Geniş alt dolap ve çekmece detaylarıyla banyo düzeninizi
+                  kolayca sağlayın
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
-      </div>
-    </section>
-    <section class="products" id="banyo-dolaplari-9" data-scroll-color="dark">
-      <div class="product-box-container">
-        <div class="box-product-item">
-          <h2 class="product-title">AHŞAP VE IŞIĞIN MODERN MİMARİSİ</h2>
-          <div class="image">
-            <img src="resimler/banyo/banyo-9.webp" width="590" height="350" loading="lazy" alt="Elegance Banyo Dolabı" />
-          </div>
-          <div class="product-box-head"></div>
-          <div class="product-box-bottom">
-            <div class="info">
-              <ul class="product-list">
-                <li>Banyonuzun zeminini özgür bırakan, duvara monte yüzer konsept ile ferahlığı hissedin</li>
-                <li>Mekanı iki kat büyük gösteren, entegre LED çerçeveli ayna ile kusursuz aydınlatma</li>
-                <li>İtalyan tarzı terrazzo tezgah ile doğal meşe kaplamanın asil kontrastını yaşayın</li>
-                <li>Tek bir dikey hat ile banyo kalabalığını yok eden, mimariye gizlenmiş saklama alanı</li>
-              </ul>
-            </div>
-            <a
-              href="https://wa.me/905057379044"
-              target="_blank"
-              class="product-info-btn"
-              >Detaylı Bilgi Alın</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="product-footer">
-      <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları Saklıdır.
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+    <section class="products" id="banyo-dolaplari-9" data-scroll-color="dark">
+      <div class="product-box-container">
+        <div class="box-product-item">
+          <h2 class="product-title" data-i18n="banyo-prod9-title">
+            AHŞAP VE IŞIĞIN MODERN MİMARİSİ
+          </h2>
+          <div class="image">
+            <img
+              src="resimler/banyo/banyo-9.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Banyo Dolabı"
+            />
+          </div>
+          <div class="product-box-head"></div>
+          <div class="product-box-bottom">
+            <div class="info">
+              <ul class="product-list">
+                <li data-i18n="banyo-prod9-li1">
+                  Banyonuzun zeminini özgür bırakan, duvara monte yüzer konsept
+                  ile ferahlığı hissedin
+                </li>
+                <li data-i18n="banyo-prod9-li2">
+                  Mekanı iki kat büyük gösteren, entegre LED çerçeveli ayna ile
+                  kusursuz aydınlatma
+                </li>
+                <li data-i18n="banyo-prod9-li3">
+                  İtalyan tarzı terrazzo tezgah ile doğal meşe kaplamanın asil
+                  kontrastını yaşayın
+                </li>
+                <li data-i18n="banyo-prod9-li4">
+                  Tek bir dikey hat ile banyo kalabalığını yok eden, mimariye
+                  gizlenmiş saklama alanı
+                </li>
+              </ul>
+            </div>
+            <a
+              href="https://wa.me/905057379044"
+              target="_blank"
+              class="product-info-btn"
+              data-i18n="product-detail-btn"
+              >Detaylı Bilgi Alın</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-footer">
+      <div class="product-credit">
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
+      </div>
+    </section>
+
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
     </button>
+
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

@@ -5,6 +5,15 @@ html.no-scroll {
   width: 100%;
 }
 
+.dropdown-content {
+  display: none;
+}
+
+.header .navbar .dropdown.active .dropdown-content {
+  display: block;
+  max-height: 500px;
+}
+
 .header {
   background-color: var(--black-color);
   display: flex;
@@ -20,10 +29,16 @@ html.no-scroll {
 }
 
 .header .logo img {
-    width: 140px !important;
-    height: auto !important; 
-    display: block;
-    object-fit: contain;
+  width: 140px !important;
+  height: auto !important;
+  display: block;
+  object-fit: contain;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 #menu-btn {
@@ -31,6 +46,7 @@ html.no-scroll {
   cursor: pointer;
   font-size: 2.5rem;
   color: var(--main-color);
+  line-height: 1;
 }
 
 .header .navbar {
@@ -108,14 +124,12 @@ html.no-scroll {
 }
 
 .box-product-item .image {
-  max-width: 90%;
   margin-bottom: 20px;
 }
 
 .box-product-item .image img {
   width: 90%;
-  aspect-ratio: 16 / 9;
-  object-fit: fill;
+  object-fit: cover;
   height: auto;
   border-radius: 1rem;
   box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.4);
@@ -309,6 +323,7 @@ html.no-scroll {
     font-size: clamp(1.5rem, 2vw, 2.2rem);
     white-space: nowrap;
   }
+
   .header .navbar > a::after {
     content: none;
   }
@@ -453,9 +468,11 @@ html.no-scroll {
   .product-list li {
     font-size: 1.6rem;
   }
+
   .principle-item {
     font-size: 2rem;
   }
+
   .product-credit {
     font-size: 2rem;
   }

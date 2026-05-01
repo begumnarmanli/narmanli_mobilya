@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,70 +17,167 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Komodin</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-komodin">
+      Komodin | Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-
-       <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
     <section class="products" id="komodin-1" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">IŞIK VE DOKUNUN MODERN DENGESİ</h2>
+          <h2 class="product-title" data-i18n="komodin-prod1-title">
+            IŞIK VE DOKUNUN MODERN DENGESİ
+          </h2>
           <div class="image">
             <img
-              src="resimler/komodin/komodin-1.webp" width="590" height="350" loading="lazy"
+              src="resimler/komodin/komodin-1.webp"
+              width="590"
+              height="350"
+              loading="lazy"
               alt="Elegance Komodin"
             />
           </div>
@@ -82,16 +185,29 @@
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Komodin çekmecelerine gizlenmiş yumuşak LED bantlarla yatak odanızda huzurlu bir gece ambiyansı yaratın</li>
-                <li>Üst yüzeydeki gerçekçi mermer dokusu ile mat antrasit gövdenin yarattığı üst düzey kontrast</li>
-                <li>İnce ayak yapısı ve kulpsuz tasarımıyla mekanın ferahlığını koruyan, modern bir silüet</li>
-                <li>Kendinden frenli ray sistemleri sayesinde çekmecelerinizi her zaman pürüzsüz ve sessizce kapatın</li>
+                <li data-i18n="komodin-prod1-li1">
+                  Komodin çekmecelerine gizlenmiş yumuşak LED bantlarla yatak
+                  odanızda huzurlu bir gece ambiyansı yaratın
+                </li>
+                <li data-i18n="komodin-prod1-li2">
+                  Üst yüzeydeki gerçekçi mermer dokusu ile mat antrasit gövdenin
+                  yarattığı üst düzey kontrast
+                </li>
+                <li data-i18n="komodin-prod1-li3">
+                  İnce ayak yapısı ve kulpsuz tasarımıyla mekanın ferahlığını
+                  koruyan, modern bir silüet
+                </li>
+                <li data-i18n="komodin-prod1-li4">
+                  Kendinden frenli ray sistemleri sayesinde çekmecelerinizi her
+                  zaman pürüzsüz ve sessizce kapatın
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -102,24 +218,45 @@
     <section class="products" id="komodin-2" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">MEŞENİN SICAKLIĞI VE IŞIĞIN ZARAFETİ</h2>
+          <h2 class="product-title" data-i18n="komodin-prod2-title">
+            MEŞENİN SICAKLIĞI VE IŞIĞIN ZARAFETİ
+          </h2>
           <div class="image">
-            <img src="resimler/komodin/komodin-2.webp" width="590" height="350" loading="lazy" alt="Elegance Komodin" />
+            <img
+              src="resimler/komodin/komodin-2.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Komodin"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Çekmece aralarına entegre edilmiş yumuşak LED bantlarla yatak odanızda dingin bir gece aydınlatması oluşturun</li>
-                <li>İpeksi meşe kaplama ve mermer üst tablanın birleşimiyle doğallığı modern bir formda baş ucunuza taşıyın</li>
-                <li>Tasarımı bozmayan ince siyah kulplar ve yüksek ayak yapısıyla mekanın ferahlığını koruyan şık bir silüet</li>
-                <li>Soft-close ray sistemleri sayesinde çekmecelerinizi her zaman pürüzsüz ve gürültüsüzce kullanın</li>
+                <li data-i18n="komodin-prod2-li1">
+                  Çekmece aralarına entegre edilmiş yumuşak LED bantlarla yatak
+                  odanızda dingin bir gece aydınlatması oluşturun
+                </li>
+                <li data-i18n="komodin-prod2-li2">
+                  İpeksi meşe kaplama ve mermer üst tablanın birleşimiyle
+                  doğallığı modern bir formda baş ucunuza taşıyın
+                </li>
+                <li data-i18n="komodin-prod2-li3">
+                  Tasarımı bozmayan ince siyah kulplar ve yüksek ayak yapısıyla
+                  mekanın ferahlığını koruyan şık bir silüet
+                </li>
+                <li data-i18n="komodin-prod2-li4">
+                  Soft-close ray sistemleri sayesinde çekmecelerinizi her zaman
+                  pürüzsüz ve gürültüsüzce kullanın
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -130,24 +267,45 @@
     <section class="products" id="komodin-3" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">YUMUŞAK HATLARIYLA MODÜLER ESTETİK</h2>
+          <h2 class="product-title" data-i18n="komodin-prod3-title">
+            YUMUŞAK HATLARIYLA MODÜLER ESTETİK
+          </h2>
           <div class="image">
-            <img src="resimler/komodin/komodin-3.webp" width="590" height="350" loading="lazy" alt="Elegance Komodin" />
+            <img
+              src="resimler/komodin/komodin-3.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Komodin"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Keskin köşelerden arındırılmış silindirik tasarımıyla yatak odanıza akışkan ve modern bir dokunuş katın</li>
-                <li>Sıcak meşe üst yüzey ile ipeksi mat gri gövdenin yarattığı huzurlu kontrast</li>
-                <li>Kulpsuz, bas-aç mekanizmalı çekmecelerle pürüzsüz görünümü bozmadan geniş saklama alanı</li>
-                <li>Dar alanlar için ideal ölçülerde tasarlanmış, başucunuzda yer kaplamayan ama fark yaratan bir duruş</li>
+                <li data-i18n="komodin-prod3-li1">
+                  Keskin köşelerden arındırılmış silindirik tasarımıyla yatak
+                  odanıza akışkan ve modern bir dokunuş katın
+                </li>
+                <li data-i18n="komodin-prod3-li2">
+                  Sıcak meşe üst yüzey ile ipeksi mat gri gövdenin yarattığı
+                  huzurlu kontrast
+                </li>
+                <li data-i18n="komodin-prod3-li3">
+                  Kulpsuz, bas-aç mekanizmalı çekmecelerle pürüzsüz görünümü
+                  bozmadan geniş saklama alanı
+                </li>
+                <li data-i18n="komodin-prod3-li4">
+                  Dar alanlar için ideal ölçülerde tasarlanmış, başucunuzda yer
+                  kaplamayan ama fark yaratan bir duruş
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -158,24 +316,45 @@
     <section class="products" id="komodin-4" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">BAŞUCUNUZDAKİ ÇİZGİSİ NET ÇÖZÜMLER</h2>
+          <h2 class="product-title" data-i18n="komodin-prod4-title">
+            BAŞUCUNUZDAKİ ÇİZGİSİ NET ÇÖZÜMLER
+          </h2>
           <div class="image">
-            <img src="resimler/komodin/komodin-4.webp" width="590" height="350" loading="lazy" alt="Elegance Komodin" /> 
+            <img
+              src="resimler/komodin/komodin-4.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Komodin"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Fırın boyalı statik metal iskelet ve birinci sınıf gövde yapısıyla uzun ömürlü ve sağlam kullanım</li>
-                <li>Modern yatak tasarımlarıyla uyumlu ideal yükseklik ve kolay erişilebilir çift katlı depolama alanı</li>
-                <li>Narmanlı Mobilya güvencesiyle, her detayı titizlikle işlenmiş yüksek kalite standartlarında üretim</li>
-                <li>Parmak izi bırakmayan mat kaplamalar ve kolay silinebilen ahşap yüzey teknolojisi</li>
+                <li data-i18n="komodin-prod4-li1">
+                  Fırın boyalı statik metal iskelet ve birinci sınıf gövde
+                  yapısıyla uzun ömürlü ve sağlam kullanım
+                </li>
+                <li data-i18n="komodin-prod4-li2">
+                  Modern yatak tasarımlarıyla uyumlu ideal yükseklik ve kolay
+                  erişilebilir çift katlı depolama alanı
+                </li>
+                <li data-i18n="komodin-prod4-li3">
+                  Narmanlı Mobilya güvencesiyle, her detayı titizlikle işlenmiş
+                  yüksek kalite standartlarında üretim
+                </li>
+                <li data-i18n="komodin-prod4-li4">
+                  Parmak izi bırakmayan mat kaplamalar ve kolay silinebilen
+                  ahşap yüzey teknolojisi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -186,7 +365,9 @@
     <section class="products" id="komodin-5" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">GEOMETRİK FORMLARIN ASİL DENGESİ</h2>
+          <h2 class="product-title" data-i18n="komodin-prod5-title">
+            GEOMETRİK FORMLARIN ASİL DENGESİ
+          </h2>
           <div class="image">
             <img
               src="resimler/komodin/komodin-5.webp"
@@ -200,16 +381,29 @@
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Mozaik desenli üst tabla ile ince gold iskeletin yarattığı yüksek segment tasarım dili</li>
-                <li>İnce metal ayaklar üzerinde yükselen antrasit modül sayesinde yatak odanızda ferah ve havadar bir görünüm</li>
-                <li>Yüzeye entegre kablosuz şarj alanı ve minimalist gece lambası formuyla modern yaşamı başucunuza taşıyın</li>
-                <li>Kulpsuz, pürüzsüz yüzey altındaki geniş depolama hacmiyle fonksiyonelliği estetikle birleştirin</li>
+                <li data-i18n="komodin-prod5-li1">
+                  Mozaik desenli üst tabla ile ince gold iskeletin yarattığı
+                  yüksek segment tasarım dili
+                </li>
+                <li data-i18n="komodin-prod5-li2">
+                  İnce metal ayaklar üzerinde yükselen antrasit modül sayesinde
+                  yatak odanızda ferah ve havadar bir görünüm
+                </li>
+                <li data-i18n="komodin-prod5-li3">
+                  Yüzeye entegre kablosuz şarj alanı ve minimalist gece lambası
+                  formuyla modern yaşamı başucunuza taşıyın
+                </li>
+                <li data-i18n="komodin-prod5-li4">
+                  Kulpsuz, pürüzsüz yüzey altındaki geniş depolama hacmiyle
+                  fonksiyonelliği estetikle birleştirin
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -220,24 +414,45 @@
     <section class="products" id="komodin-6" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOĞANIN SAF DOKUSU BAŞUCUNUZDA</h2>
+          <h2 class="product-title" data-i18n="komodin-prod6-title">
+            DOĞANIN SAF DOKUSU BAŞUCUNUZDA
+          </h2>
           <div class="image">
-            <img src="resimler/komodin/komodin-6.webp" width="590" height="350" loading="lazy" alt="Elegance Komodin" />
+            <img
+              src="resimler/komodin/komodin-6.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Komodin"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Belirgin budak yolları ve doğal meşe dokusuyla yatak odanıza ham, sıcak ve samimi bir ruh katın</li>
-                <li>Kitaplarınız ve kişisel objeleriniz için tasarlanmış, derinlik hissi yaratan geniş açık bölme alanı</li>
-                <li>Kulpsuz ve parçasız blok tasarımıyla modern dekorasyonun sadelik ilkesini en doğal haliyle yaşayın</li>
-                <li>Çizilmelere ve zamana karşı dirençli, doğallığını yıllar boyu koruyan birinci sınıf malzeme yapısı</li>
+                <li data-i18n="komodin-prod6-li1">
+                  Belirgin budak yolları ve doğal meşe dokusuyla yatak odanıza
+                  ham, sıcak ve samimi bir ruh katın
+                </li>
+                <li data-i18n="komodin-prod6-li2">
+                  Kitaplarınız ve kişisel objeleriniz için tasarlanmış, derinlik
+                  hissi yaratan geniş açık bölme alanı
+                </li>
+                <li data-i18n="komodin-prod6-li3">
+                  Kulpsuz ve parçasız blok tasarımıyla modern dekorasyonun
+                  sadelik ilkesini en doğal haliyle yaşayın
+                </li>
+                <li data-i18n="komodin-prod6-li4">
+                  Çizilmelere ve zamana karşı dirençli, doğallığını yıllar boyu
+                  koruyan birinci sınıf malzeme yapısı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -248,24 +463,45 @@
     <section class="products" id="komodin-7" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">YATAK ODANIZDAKİ YENİ ODAK NOKTASI</h2>
+          <h2 class="product-title" data-i18n="komodin-prod7-title">
+            YATAK ODANIZDAKİ YENİ ODAK NOKTASI
+          </h2>
           <div class="image">
-            <img src="resimler/komodin/komodin-7.webp" width="590" height="350" loading="lazy" alt="Elegance Komodin" />
+            <img
+              src="resimler/komodin/komodin-7.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Komodin"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Doğal mermer, özel işlenmiş ahşap ve metalin birleşimiyle evinize değer katan zamansız bir parça</li>
-                <li>Başucunuzda ihtiyaç duyduğunuz her şeye estetik bir formda ulaşmanızı sağlayan ideal boyutlar</li>
-                <li>Narmanlı Mobilya'nın titiz el işçiliği ile her detayı özenle kurgulanmış butik üretim kalitesi</li>
-                <li>Neme ve darbelere dayanıklı birinci sınıf MDF-Lam gövde yapısıyla uzun ömürlü bir şıklık</li>
+                <li data-i18n="komodin-prod7-li1">
+                  Doğal mermer, özel işlenmiş ahşap ve metalin birleşimiyle
+                  evinize değer katan zamansız bir parça
+                </li>
+                <li data-i18n="komodin-prod7-li2">
+                  Başucunuzda ihtiyaç duyduğunuz her şeye estetik bir formda
+                  ulaşmanızı sağlayan ideal boyutlar
+                </li>
+                <li data-i18n="komodin-prod7-li3">
+                  Narmanlı Mobilya'nın titiz el işçiliği ile her detayı özenle
+                  kurgulanmış butik üretim kalitesi
+                </li>
+                <li data-i18n="komodin-prod7-li4">
+                  Neme ve darbelere dayanıklı birinci sınıf MDF-Lam gövde
+                  yapısıyla uzun ömürlü bir şıklık
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -276,51 +512,95 @@
     <section class="products" id="komodin-8" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">TASARIMIN EN HAFİF VE MODERN HALİ</h2>
+          <h2 class="product-title" data-i18n="komodin-prod8-title">
+            TASARIMIN EN HAFİF VE MODERN HALİ
+          </h2>
           <div class="image">
-            <img src="resimler/komodin/komodin-8.webp" width="590" height="350" loading="lazy" alt="Elegance Komodin" />
+            <img
+              src="resimler/komodin/komodin-8.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Komodin"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>üksek taşıma kapasiteli kristal şeffaflığındaki ayakları sayesinde yatak odanızda sınırları ortadan kaldıran, havada asılı bir estetik</li>
-                <li>Çekmece ön panellerindeki üç boyutlu elmas kesim detaylarıyla ışık-gölge oyunlarının sanatsal birleşimini keşfedin</li>
-                <li>Komodine enerji katan mozaik desenli üst yüzey ile modern antrasit gövdenin yarattığı üst düzey kontrast</li>
-                <li>Formun saflığını bozmayan entegre kulp detayları ve yumuşak kapanan (soft-close) lüks ray sistemleri</li>
+                <li data-i18n="komodin-prod8-li1">
+                  Yüksek taşıma kapasiteli kristal şeffaflığındaki ayakları
+                  sayesinde yatak odanızda sınırları ortadan kaldıran, havada
+                  asılı bir estetik
+                </li>
+                <li data-i18n="komodin-prod8-li2">
+                  Çekmece ön panellerindeki üç boyutlu elmas kesim detaylarıyla
+                  ışık-gölge oyunlarının sanatsal birleşimini keşfedin
+                </li>
+                <li data-i18n="komodin-prod8-li3">
+                  Komodine enerji katan mozaik desenli üst yüzey ile modern
+                  antrasit gövdenin yarattığı üst düzey kontrast
+                </li>
+                <li data-i18n="komodin-prod8-li4">
+                  Formun saflığını bozmayan entegre kulp detayları ve yumuşak
+                  kapanan (soft-close) lüks ray sistemleri
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <section class="products" id="komodin-9" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">PALET DOKUSUNUN DOĞALLIĞI</h2>
+          <h2 class="product-title" data-i18n="komodin-prod9-title">
+            PALET DOKUSUNUN DOĞALLIĞI
+          </h2>
           <div class="image">
-            <img src="resimler/komodin/komodin-9.webp" width="590" height="350" loading="lazy" alt="Elegance Komodin" />
+            <img
+              src="resimler/komodin/komodin-9.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Komodin"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Üzerindeki damga ve doku detaylarıyla gerçek palet formunu modern bir komodin işlevine dönüştürün</li>
-                <li>Kitaplarınız ve kişisel objeleriniz için tasarlanmış iki katlı geniş bölme ile fonksiyonel depolama alanı</li>
-                <li>Ahşabın işlenmemiş doğal tonlarıyla yatak odanızda huzurlu bir "loft" dairesi havası yaratın</li>
-                <li>Doğal ahşap yapısı sayesinde darbelere dayanıklı, karakter sahibi ve uzun ömürlü kullanım</li>
+                <li data-i18n="komodin-prod9-li1">
+                  Üzerindeki damga ve doku detaylarıyla gerçek palet formunu
+                  modern bir komodin işlevine dönüştürün
+                </li>
+                <li data-i18n="komodin-prod9-li2">
+                  Kitaplarınız ve kişisel objeleriniz için tasarlanmış iki katlı
+                  geniş bölme ile fonksiyonel depolama alanı
+                </li>
+                <li data-i18n="komodin-prod9-li3">
+                  Ahşabın işlenmemiş doğal tonlarıyla yatak odanızda huzurlu bir
+                  "loft" dairesi havası yaratın
+                </li>
+                <li data-i18n="komodin-prod9-li4">
+                  Doğal ahşap yapısı sayesinde darbelere dayanıklı, karakter
+                  sahibi ve uzun ömürlü kullanım
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -330,13 +610,18 @@
 
     <section class="product-footer">
       <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları Saklıdır.
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
     </button>
+
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

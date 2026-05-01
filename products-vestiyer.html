@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,70 +17,167 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Vestiyer</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-vestiyer">
+      Vestiyer | Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-
-       <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
     <section class="products" id="vestiyer-1" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">EVİNİZİN İLK İMZASI: ESTETİK KARŞILAMA</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod1-title">
+            EVİNİZİN İLK İMZASI: ESTETİK KARŞILAMA
+          </h2>
           <div class="image">
             <img
-              src="resimler/vestiyer/vestiyer-1.webp" width="590" height="350" loading="lazy"
+              src="resimler/vestiyer/vestiyer-1.webp"
+              width="590"
+              height="350"
+              loading="lazy"
               alt="Elegance Vestiyer"
             />
           </div>
@@ -82,16 +185,29 @@
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Üçlü dairesel LED ayna tasarımıyla antrenize sanatsal bir derinlik ve modern bir ışık katın</li>
-                <li>Entegre mermer oturma alanı ve pabuçluk detaylarıyla estetiği konforla birleştirin</li>
-                <li>Tavana kadar uzanan gizli dolaplar ve açık dekoratif raflarla antrenizdeki kalabalığa son verin</li>
-                <li>Arka plandaki çizgisel panel dokusuyla modern mimariyi evinizin girişine taşıyın</li>
+                <li data-i18n="vestiyer-prod1-li1">
+                  Üçlü dairesel LED ayna tasarımıyla antrenize sanatsal bir
+                  derinlik ve modern bir ışık katın
+                </li>
+                <li data-i18n="vestiyer-prod1-li2">
+                  Entegre mermer oturma alanı ve pabuçluk detaylarıyla estetiği
+                  konforla birleştirin
+                </li>
+                <li data-i18n="vestiyer-prod1-li3">
+                  Tavana kadar uzanan gizli dolaplar ve açık dekoratif raflarla
+                  antrenizdeki kalabalığa son verin
+                </li>
+                <li data-i18n="vestiyer-prod1-li4">
+                  Arka plandaki çizgisel panel dokusuyla modern mimariyi
+                  evinizin girişine taşıyın
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -102,24 +218,45 @@
     <section class="products" id="vestiyer-2" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ASALETİN GİRİŞİ: PRESTİJLİ ANTRELER</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod2-title">
+            ASALETİN GİRİŞİ: PRESTİJLİ ANTRELER
+          </h2>
           <div class="image">
-            <img src="resimler/vestiyer/vestiyer-2.webp" width="590" height="350" loading="lazy" alt="Elegance Vestiyer" />
+            <img
+              src="resimler/vestiyer/vestiyer-2.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Vestiyer"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Antrasit, ceviz ve bronz camın kusursuz dengesiyle evine girerken kaliteyi hisset</li>
-                <li>Mimari ölçülerinize tam uyum sağlayan, tamamen size özel projelendirilmiş vestiyer çözümleri</li>
-                <li>Kulpsuz tasarım ve gizli ışık bantlarıyla göz yormayan, dingin bir şıklık</li>
-                <li>Yüksek yoğunluklu MDF gövde ve çizilmeye dirençli kaplamalarla ömürlük bir yatırım</li>
+                <li data-i18n="vestiyer-prod2-li1">
+                  Antrasit, ceviz ve bronz camın kusursuz dengesiyle evine
+                  girerken kaliteyi hisset
+                </li>
+                <li data-i18n="vestiyer-prod2-li2">
+                  Mimari ölçülerinize tam uyum sağlayan, tamamen size özel
+                  projelendirilmiş vestiyer çözümleri
+                </li>
+                <li data-i18n="vestiyer-prod2-li3">
+                  Kulpsuz tasarım ve gizli ışık bantlarıyla göz yormayan, dingin
+                  bir şıklık
+                </li>
+                <li data-i18n="vestiyer-prod2-li4">
+                  Yüksek yoğunluklu MDF gövde ve çizilmeye dirençli kaplamalarla
+                  ömürlük bir yatırım
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -130,24 +267,45 @@
     <section class="products" id="vestiyer-3" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ANTREDE AYDINLIK VE MİNİMALİST ŞIKLIK</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod3-title">
+            ANTREDE AYDINLIK VE MİNİMALİST ŞIKLIK
+          </h2>
           <div class="image">
-            <img src="resimler/vestiyer/vestiyer-3.webp" width="590" height="350" loading="lazy" alt="Elegance Vestiyer" />
+            <img
+              src="resimler/vestiyer/vestiyer-3.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Vestiyer"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Küçük antreleri bile geniş ve ferah gösteren, ışığı yansıtan mat beyaz yüzeyler</li>
-                <li>Modern siyah kulp tasarımlarıyla minimalist çizgileri estetik bir dokunuşla tamamlayın</li>
-                <li>Ayakkabılık, askılık ve kapalı dolap sistemleriyle her eşyaya özel bir yer ayırın</li>
-                <li>Evden çıkmadan son bir kontrol için entegre edilmiş, mekana derinlik katan şık ayna detayı</li>
+                <li data-i18n="vestiyer-prod3-li1">
+                  Küçük antreleri bile geniş ve ferah gösteren, ışığı yansıtan
+                  mat beyaz yüzeyler
+                </li>
+                <li data-i18n="vestiyer-prod3-li2">
+                  Modern siyah kulp tasarımlarıyla minimalist çizgileri estetik
+                  bir dokunuşla tamamlayın
+                </li>
+                <li data-i18n="vestiyer-prod3-li3">
+                  Ayakkabılık, askılık ve kapalı dolap sistemleriyle her eşyaya
+                  özel bir yer ayırın
+                </li>
+                <li data-i18n="vestiyer-prod3-li4">
+                  Evden çıkmadan son bir kontrol için entegre edilmiş, mekana
+                  derinlik katan şık ayna detayı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -158,24 +316,45 @@
     <section class="products" id="vestiyer-4" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">YALIN ÇİZGİLERLE GELEN ANTRE DÜZENİ</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod4-title">
+            YALIN ÇİZGİLERLE GELEN ANTRE DÜZENİ
+          </h2>
           <div class="image">
-            <img src="resimler/vestiyer/vestiyer-4.webp" width="590" height="350" loading="lazy" alt="Elegance Vestiyer" /> 
+            <img
+              src="resimler/vestiyer/vestiyer-4.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Vestiyer"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Koyu tonların asaletini modern ve sade bir formla antrenize taşıyın</li>
-                <li>Üç kapaklı ana dolap ve yanındaki açık askı ünitesiyle günlük montlarınız için hızlı erişim sağlayın</li>
-                <li>Ana üniteden ayrı konumlandırılan çekmeceli dresuar ve dairesel ayna ile antrenizi bir yaşam alanına dönüştürün</li>
-                <li>İnce metalik detaylarla zenginleştirilmiş, yormayan ve zamansız bir estetik anlayışı</li>
+                <li data-i18n="vestiyer-prod4-li1">
+                  Koyu tonların asaletini modern ve sade bir formla antrenize
+                  taşıyın
+                </li>
+                <li data-i18n="vestiyer-prod4-li2">
+                  Üç kapaklı ana dolap ve yanındaki açık askı ünitesiyle günlük
+                  montlarınız için hızlı erişim sağlayın
+                </li>
+                <li data-i18n="vestiyer-prod4-li3">
+                  Ana üniteden ayrı konumlandırılan çekmeceli dresuar ve
+                  dairesel ayna ile antrenizi bir yaşam alanına dönüştürün
+                </li>
+                <li data-i18n="vestiyer-prod4-li4">
+                  İnce metalik detaylarla zenginleştirilmiş, yormayan ve
+                  zamansız bir estetik anlayışı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -186,7 +365,9 @@
     <section class="products" id="vestiyer-5" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ANTREDE SESSİZ LÜKS VE SADELİK</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod5-title">
+            ANTREDE SESSİZ LÜKS VE SADELİK
+          </h2>
           <div class="image">
             <img
               src="resimler/vestiyer/vestiyer-5.webp"
@@ -200,16 +381,29 @@
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Mekanı yumuşatan arkadan aydınlatmalı oval ayna ile antrenizde huzurlu bir karşılama alanı oluşturun</li>
-                <li>Pürüzsüz lake kapakların ardında gizlenen geniş saklama alanlarıyla dağınıklığı tamamen ortadan kaldırın</li>
-                <li>Günlük kıyafetleriniz için simetrik askı alanları ve entegre puf ile fonksiyonelliği estetikle yaşayın</li>
-                <li>Alt bölümde yer alan sensörlü aydınlatma ile ayakkabılarınızı şık bir galeri düzeninde sergileyin</li>
+                <li data-i18n="vestiyer-prod5-li1">
+                  Mekanı yumuşatan arkadan aydınlatmalı oval ayna ile antrenizde
+                  huzurlu bir karşılama alanı oluşturun
+                </li>
+                <li data-i18n="vestiyer-prod5-li2">
+                  Pürüzsüz lake kapakların ardında gizlenen geniş saklama
+                  alanlarıyla dağınıklığı tamamen ortadan kaldırın
+                </li>
+                <li data-i18n="vestiyer-prod5-li3">
+                  Günlük kıyafetleriniz için simetrik askı alanları ve entegre
+                  puf ile fonksiyonelliği estetikle yaşayın
+                </li>
+                <li data-i18n="vestiyer-prod5-li4">
+                  Alt bölümde yer alan sensörlü aydınlatma ile ayakkabılarınızı
+                  şık bir galeri düzeninde sergileyin
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -220,24 +414,45 @@
     <section class="products" id="vestiyer-6" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">AHŞAP VE BRONZUN ASİL MİMARİSİ</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod6-title">
+            AHŞAP VE BRONZUN ASİL MİMARİSİ
+          </h2>
           <div class="image">
-            <img src="resimler/vestiyer/vestiyer-6.webp" width="590" height="350" loading="lazy" alt="Elegance Vestiyer" />
+            <img
+              src="resimler/vestiyer/vestiyer-6.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Vestiyer"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Doğal ceviz kaplama ile asil bronz metal detayların kusursuz dengesini antrenize taşıyın</li>
-                <li>Tavana kadar uzanan minimalist boy dolaplarıyla evin girişindeki tüm karmaşayı profesyonelce gizleyin</li>
-                <li>Ayakkabılarınızı giyerken rahatlık sunan yumuşak kumaş döşemeli oturma bölümü</li>
-                <li>Dolap altı ve ayna arkası gizli LED bantlarla antrenizde huzurlu bir derinlik yaratın</li>
+                <li data-i18n="vestiyer-prod6-li1">
+                  Doğal ceviz kaplama ile asil bronz metal detayların kusursuz
+                  dengesini antrenize taşıyın
+                </li>
+                <li data-i18n="vestiyer-prod6-li2">
+                  Tavana kadar uzanan minimalist boy dolaplarıyla evin
+                  girişindeki tüm karmaşayı profesyonelce gizleyin
+                </li>
+                <li data-i18n="vestiyer-prod6-li3">
+                  Ayakkabılarınızı giyerken rahatlık sunan yumuşak kumaş
+                  döşemeli oturma bölümü
+                </li>
+                <li data-i18n="vestiyer-prod6-li4">
+                  Dolap altı ve ayna arkası gizli LED bantlarla antrenizde
+                  huzurlu bir derinlik yaratın
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -248,24 +463,45 @@
     <section class="products" id="vestiyer-7" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ANTREDE KUSURSUZ DÜZEN</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod7-title">
+            ANTREDE KUSURSUZ DÜZEN
+          </h2>
           <div class="image">
-            <img src="resimler/vestiyer/vestiyer-7.webp" width="590" height="350" loading="lazy" alt="Elegance Vestiyer" />
+            <img
+              src="resimler/vestiyer/vestiyer-7.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Vestiyer"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Açık raf sistemiyle ayakkabılarınıza hızlıca erişin, antre dağınıklığını minimuma indirin</li>
-                <li>Palto, çanta ve günlük aksesuarlarınız için gizlenmiş, yüksek kapasiteli ve ergonomik askı çözümleri</li>
-                <li>Dolap altı ve ayna arkası gizli LED bantlarla antrenizde huzurlu bir derinlik yaratın</li>
-                <li>Evinizin ilk imzası olan antrenize, değer katan, nesillik ve zamansız bir mobilya</li>
+                <li data-i18n="vestiyer-prod7-li1">
+                  Açık raf sistemiyle ayakkabılarınıza hızlıca erişin, antre
+                  dağınıklığını minimuma indirin
+                </li>
+                <li data-i18n="vestiyer-prod7-li2">
+                  Palto, çanta ve günlük aksesuarlarınız için gizlenmiş, yüksek
+                  kapasiteli ve ergonomik askı çözümleri
+                </li>
+                <li data-i18n="vestiyer-prod7-li3">
+                  Dolap altı ve ayna arkası gizli LED bantlarla antrenizde
+                  huzurlu bir derinlik yaratın
+                </li>
+                <li data-i18n="vestiyer-prod7-li4">
+                  Evinizin ilk imzası olan antrenize değer katan, nesillik ve
+                  zamansız bir mobilya
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -276,51 +512,94 @@
     <section class="products" id="vestiyer-8" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DİNAMİK VE ŞIK KARŞILAMA</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod8-title">
+            DİNAMİK VE ŞIK KARŞILAMA
+          </h2>
           <div class="image">
-            <img src="resimler/vestiyer/vestiyer-8.webp" width="590" height="350" loading="lazy" alt="Elegance Vestiyer" />
+            <img
+              src="resimler/vestiyer/vestiyer-8.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Vestiyer"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Sıcak meşe dokusu ve antrasit panellerin mükemmel uyumuyla antrenize modern bir karakter katın</li>
-                <li>Boy dolapları ve çekmeceli ünitelerle, en dar girişlerde bile maksimum depolama alanı</li>
-                <li>Entegre oturma pufu ve fonksiyonel askı aparatlarıyla evden çıkış sürecinizi keyfe dönüştürün</li>
-                <li>Tamamı birinci sınıf MDF-Lam malzemeden, titiz el işçiliği ile size özel üretildi</li>
+                <li data-i18n="vestiyer-prod8-li1">
+                  Sıcak meşe dokusu ve antrasit panellerin mükemmel uyumuyla
+                  antrenize modern bir karakter katın
+                </li>
+                <li data-i18n="vestiyer-prod8-li2">
+                  Boy dolapları ve çekmeceli ünitelerle, en dar girişlerde bile
+                  maksimum depolama alanı
+                </li>
+                <li data-i18n="vestiyer-prod8-li3">
+                  Entegre oturma pufu ve fonksiyonel askı aparatlarıyla evden
+                  çıkış sürecinizi keyfe dönüştürün
+                </li>
+                <li data-i18n="vestiyer-prod8-li4">
+                  Tamamı birinci sınıf MDF-Lam malzemeden, titiz el işçiliği ile
+                  size özel üretildi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <section class="products" id="vestiyer-9" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">GEOMETRİK FORMLARLA FERAH GİRİŞLER</h2>
+          <h2 class="product-title" data-i18n="vestiyer-prod9-title">
+            GEOMETRİK FORMLARLA FERAH GİRİŞLER
+          </h2>
           <div class="image">
-            <img src="resimler/vestiyer/vestiyer-9.webp" width="590" height="350" loading="lazy" alt="Elegance Vestiyer" />
+            <img
+              src="resimler/vestiyer/vestiyer-9.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Vestiyer"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Yerden yüksek tasarımıyla antrenizde genişlik hissini artırın ve zemin temizliğinde kolaylığı keşfedin</li>
-                <li>Dekoratif objeleriniz için tasarlanmış açık asimetrik raflarla antrenize kişisel bir dokunuş katın</li>
-                <li>Işıklı pabuçluk bölmesi ve konforlu oturma pufuyla evden çıkış rutininizi keyifli bir deneyime dönüştürün</li>
-                <li>İpeksi mat beyaz kapakların sıcak ahşap detaylarla yarattığı huzurlu ve aydınlık atmosfer</li>
+                <li data-i18n="vestiyer-prod9-li1">
+                  Yerden yüksek tasarımıyla antrenizde genişlik hissini artırın
+                  ve zemin temizliğinde kolaylığı keşfedin
+                </li>
+                <li data-i18n="vestiyer-prod9-li2">
+                  Dekoratif objeleriniz için tasarlanmış açık asimetrik raflarla
+                  antrenize kişisel bir dokunuş katın
+                </li>
+                <li data-i18n="vestiyer-prod9-li3">
+                  Işıklı pabuçluk bölmesi ve konforlu oturma pufuyla evden çıkış
+                  rutininizi keyifli bir deneyime dönüştürün
+                </li>
+                <li data-i18n="vestiyer-prod9-li4">
+                  İpeksi mat beyaz kapakların sıcak ahşap detaylarla yarattığı
+                  huzurlu ve aydınlık atmosfer
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -330,13 +609,18 @@
 
     <section class="product-footer">
       <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları Saklıdır.
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
     </button>
+
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,86 +16,198 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Düşme Yatak</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-dusme-yatak">
+      Düşme Yatak | Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-      <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
     <section class="products" id="dusme-yatak-1" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">AKILLI DUVAR VE DÜŞME YATAK SİSTEMİ</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod1-title">
+            AKILLI DUVAR VE DÜŞME YATAK SİSTEMİ
+          </h2>
           <div class="image">
             <img
-              src="resimler/dusme-yatak/dusme-yatak-1.webp" width="590" height="350" loading="lazy"
+              src="resimler/dusme-yatak/dusme-yatak-1.webp"
+              width="590"
+              height="350"
+              loading="lazy"
               alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod1-alt"
             />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Panel sistemine gizlenmiş, tek hareketle açılabilen ve mekanda %70 alan tasarrufu sağlayan düşme yatak kurgusu</li>
-                <li>Altın oranlı lineer hatlarla bölümlenmiş, yatak kapalıyken şık bir duvar dekorasyonu sunan antrasit yüzeyler</li>
-                <li>Hem sergileme alanı hem de yatak açıldığında gece lambası görevi gören, sıcak tonlu entegre LED modülleri</li>
-                <li>Gündüz ferah bir çalışma ve dinlenme köşesi, gece ise konforlu bir uyku modülüne dönüşen akıllı oda tasarımı</li>
+                <li data-i18n="dusme-yatak-prod1-li1">
+                  Panel sistemine gizlenmiş, tek hareketle açılabilen ve mekanda
+                  %70 alan tasarrufu sağlayan düşme yatak kurgusu
+                </li>
+                <li data-i18n="dusme-yatak-prod1-li2">
+                  Altın oranlı lineer hatlarla bölümlenmiş, yatak kapalıyken şık
+                  bir duvar dekorasyonu sunan antrasit yüzeyler
+                </li>
+                <li data-i18n="dusme-yatak-prod1-li3">
+                  Hem sergileme alanı hem de yatak açıldığında gece lambası
+                  görevi gören, sıcak tonlu entegre LED modülleri
+                </li>
+                <li data-i18n="dusme-yatak-prod1-li4">
+                  Gündüz ferah bir çalışma ve dinlenme köşesi, gece ise konforlu
+                  bir uyku modülüne dönüşen akıllı oda tasarımı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -101,24 +218,47 @@
     <section class="products" id="dusme-yatak-2" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">KATLANIR DUVAR YATAĞI SİSTEMİ</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod2-title">
+            KATLANIR DUVAR YATAĞI SİSTEMİ
+          </h2>
           <div class="image">
-            <img src="resimler/dusme-yatak/dusme-yatak-2.webp" width="590" height="350" loading="lazy" alt="Elegance Düşme Yatak" />
+            <img
+              src="resimler/dusme-yatak/dusme-yatak-2.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod2-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Duvar ünitesine tam entegre, kapandığında pürüzsüz bir yüzey oluşturan ve %75 alan tasarrufu sağlayan katlanır yatak kurgusu</li>
-                <li>Yatak kapalıyken şık bir kitaplık, açıkken ise komodin işlevi gören dikey kurgulanmış açık raf modülleri</li>
-                <li>Panel sistemine eklemlenen minimalist çalışma masası ve boy dolap üniteleriyle sağlanan hibrit oda organizasyonu</li>
-                <li>Panel içine yerleştirilmiş, hem çalışma hem de uyku modunda ideal ışık açısı sunan mafsallı okuma aplikleri</li>
+                <li data-i18n="dusme-yatak-prod2-li1">
+                  Duvar ünitesine tam entegre, kapandığında pürüzsüz bir yüzey
+                  oluşturan ve %75 alan tasarrufu sağlayan katlanır yatak
+                  kurgusu
+                </li>
+                <li data-i18n="dusme-yatak-prod2-li2">
+                  Yatak kapalıyken şık bir kitaplık, açıkken ise komodin işlevi
+                  gören dikey kurgulanmış açık raf modülleri
+                </li>
+                <li data-i18n="dusme-yatak-prod2-li3">
+                  Panel sistemine eklemlenen minimalist çalışma masası ve boy
+                  dolap üniteleriyle sağlanan hibrit oda organizasyonu
+                </li>
+                <li data-i18n="dusme-yatak-prod2-li4">
+                  Panel içine yerleştirilmiş, hem çalışma hem de uyku modunda
+                  ideal ışık açısı sunan mafsallı okuma aplikleri
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -129,24 +269,46 @@
     <section class="products" id="dusme-yatak-3" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ENTEGRE DUVAR PANELİ</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod3-title">
+            ENTEGRE DUVAR PANELİ
+          </h2>
           <div class="image">
-            <img src="resimler/dusme-yatak/dusme-yatak-3.webp" width="590" height="350" loading="lazy" alt="Elegance Düşme Yatak" />
+            <img
+              src="resimler/dusme-yatak/dusme-yatak-3.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod3-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Tek hareketle açılabilen, kapandığında pürüzsüz bir panel yüzeyine dönüşen profesyonel yatak kurgusu</li>
-                <li>Küçük mekanlarda alan verimliliği sağlayan, duvar ünitesine tam entegre mühendislik</li>
-                <li>Gündüzleri geniş bir yaşam alanı, geceleri ise konforlu bir uyku modülüne dönüşen akıllı tasarım</li>
-                <li>Yatak modülünün yanına eklemlenen açık raflar ve çalışma masası ile kurgulanmış bütünleşik oda planı</li>
+                <li data-i18n="dusme-yatak-prod3-li1">
+                  Tek hareketle açılabilen, kapandığında pürüzsüz bir panel
+                  yüzeyine dönüşen profesyonel yatak kurgusu
+                </li>
+                <li data-i18n="dusme-yatak-prod3-li2">
+                  Küçük mekanlarda alan verimliliği sağlayan, duvar ünitesine
+                  tam entegre mühendislik
+                </li>
+                <li data-i18n="dusme-yatak-prod3-li3">
+                  Gündüzleri geniş bir yaşam alanı, geceleri ise konforlu bir
+                  uyku modülüne dönüşen akıllı tasarım
+                </li>
+                <li data-i18n="dusme-yatak-prod3-li4">
+                  Yatak modülünün yanına eklemlenen açık raflar ve çalışma
+                  masası ile kurgulanmış bütünleşik oda planı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -157,24 +319,46 @@
     <section class="products" id="dusme-yatak-4" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">AKILLI RANZA MODÜLÜ</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod4-title">
+            AKILLI RANZA MODÜLÜ
+          </h2>
           <div class="image">
-            <img src="resimler/dusme-yatak/dusme-yatak-4.webp" width="590" height="350" loading="lazy" alt="Elegance Düşme Yatak" /> 
+            <img
+              src="resimler/dusme-yatak/dusme-yatak-4.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod4-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Duvar ünitesine tam entegre, bağımsız açılabilen alt ve üst yatak kurgusuyla maksimum alan verimliliği</li>
-                <li>Üst yatak için tasarlanmış antrasit metal korkuluk ve sağlam merdiven sistemiyle güvenli kullanım</li>
-                <li>Her iki yatak bölmesi için kurgulanmış, konforlu okuma açısı sunan gömme aplik ve priz çözümleri</li>
-                <li>Panel sisteminin devamına eklemlenen minimalist çalışma modülü ve boy kitaplıklarla sağlanan tam kapasite yaşam alanı</li>
+                <li data-i18n="dusme-yatak-prod4-li1">
+                  Duvar ünitesine tam entegre, bağımsız açılabilen alt ve üst
+                  yatak kurgusuyla maksimum alan verimliliği
+                </li>
+                <li data-i18n="dusme-yatak-prod4-li2">
+                  Üst yatak için tasarlanmış antrasit metal korkuluk ve sağlam
+                  merdiven sistemiyle güvenli kullanım
+                </li>
+                <li data-i18n="dusme-yatak-prod4-li3">
+                  Her iki yatak bölmesi için kurgulanmış, konforlu okuma açısı
+                  sunan gömme aplik ve priz çözümleri
+                </li>
+                <li data-i18n="dusme-yatak-prod4-li4">
+                  Panel sisteminin devamına eklemlenen minimalist çalışma modülü
+                  ve boy kitaplıklarla sağlanan tam kapasite yaşam alanı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -185,7 +369,9 @@
     <section class="products" id="dusme-yatak-5" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">KATLANIR YATAK VE ÇALIŞMA ÜNİTESİ</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod5-title">
+            KATLANIR YATAK VE ÇALIŞMA ÜNİTESİ
+          </h2>
           <div class="image">
             <img
               src="resimler/dusme-yatak/dusme-yatak-5.webp"
@@ -193,22 +379,36 @@
               height="350"
               loading="lazy"
               alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod5-alt"
             />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Dar odalarda maksimum hareket alanı bırakan, yatay açılır akıllı yatak kurgusu</li>
-                <li>Üst kısımda yer alan geniş saklama dolapları ve kitaplık raflarıyla sağlanan kompakt düzen</li>
-                <li>Alt panelde yer alan çalışma yüzeyiyle odanın hem ofis hem de uyku alanına dönüşen hibrit yapısı</li>
-                <li>Uzun ömürlü kullanım sunan yüksek yoğunluklu MDF gövde ve pürüzsüz açılış sağlayan mekanik donanım</li>
+                <li data-i18n="dusme-yatak-prod5-li1">
+                  Dar odalarda maksimum hareket alanı bırakan, yatay açılır
+                  akıllı yatak kurgusu
+                </li>
+                <li data-i18n="dusme-yatak-prod5-li2">
+                  Üst kısımda yer alan geniş saklama dolapları ve kitaplık
+                  raflarıyla sağlanan kompakt düzen
+                </li>
+                <li data-i18n="dusme-yatak-prod5-li3">
+                  Alt panelde yer alan çalışma yüzeyiyle odanın hem ofis hem de
+                  uyku alanına dönüşen hibrit yapısı
+                </li>
+                <li data-i18n="dusme-yatak-prod5-li4">
+                  Uzun ömürlü kullanım sunan yüksek yoğunluklu MDF gövde ve
+                  pürüzsüz açılış sağlayan mekanik donanım
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -219,24 +419,46 @@
     <section class="products" id="dusme-yatak-6" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOĞAL DOKULU DUVAR YATAĞI</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod6-title">
+            DOĞAL DOKULU DUVAR YATAĞI
+          </h2>
           <div class="image">
-            <img src="resimler/dusme-yatak/dusme-yatak-6.webp" width="590" height="350" loading="lazy" alt="Elegance Düşme Yatak" />
+            <img
+              src="resimler/dusme-yatak/dusme-yatak-6.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod6-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Yaşam alanını daraltmadan, tek bir hamleyle odayı konforlu bir yatak odasına dönüştüren gizli düşme sistemi</li>
-                <li>Yan panellerde yer alan açık raf modülleriyle kitap ve kişisel eşyalar için kurgulanmış şık sergileme alanı</li>
-                <li>Sıcak ahşap dokusu ve siyah metal kulpların uyumuyla, ev dekorasyonuna modern bir derinlik katan tasarım dili</li>
-                <li>Yatak kapalıyken şık bir duvar ünitesi görünümü sunan, zemin alanını tamamen serbest bırakan kompakt yapı</li>
+                <li data-i18n="dusme-yatak-prod6-li1">
+                  Yaşam alanını daraltmadan, tek bir hamleyle odayı konforlu bir
+                  yatak odasına dönüştüren gizli düşme sistemi
+                </li>
+                <li data-i18n="dusme-yatak-prod6-li2">
+                  Yan panellerde yer alan açık raf modülleriyle kitap ve kişisel
+                  eşyalar için kurgulanmış şık sergileme alanı
+                </li>
+                <li data-i18n="dusme-yatak-prod6-li3">
+                  Sıcak ahşap dokusu ve siyah metal kulpların uyumuyla, ev
+                  dekorasyonuna modern bir derinlik katan tasarım dili
+                </li>
+                <li data-i18n="dusme-yatak-prod6-li4">
+                  Yatak kapalıyken şık bir duvar ünitesi görünümü sunan, zemin
+                  alanını tamamen serbest bırakan kompakt yapı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -247,24 +469,46 @@
     <section class="products" id="dusme-yatak-7" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">HAREKETLİ UYKU MODÜLÜ</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod7-title">
+            HAREKETLİ UYKU MODÜLÜ
+          </h2>
           <div class="image">
-            <img src="resimler/dusme-yatak/dusme-yatak-7.webp" width="590" height="350" loading="lazy" alt="Elegance Düşme Yatak" />
+            <img
+              src="resimler/dusme-yatak/dusme-yatak-7.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod7-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Duvar ünitesine tam entegre, kapandığında pürüzsüz bir dekoratif yüzey oluşturan mekanik yatak sistemi</li>
-                <li>Antrasit beton dokulu panellerin doğal ceviz başlık ve gizli LED aydınlatma ile yarattığı modern ev estetiği</li>
-                <li>Geometrik bölmelerle kurgulanmış, hem depolama hem de sergileme alanı sunan fonksiyonel duvar tasarımı</li>
-                <li>Zemin alanını serbest bırakarak yaşam alanını çok amaçlı kullanıma açan ileri mühendislik çözümü</li>
+                <li data-i18n="dusme-yatak-prod7-li1">
+                  Duvar ünitesine tam entegre, kapandığında pürüzsüz bir
+                  dekoratif yüzey oluşturan mekanik yatak sistemi
+                </li>
+                <li data-i18n="dusme-yatak-prod7-li2">
+                  Antrasit beton dokulu panellerin doğal ceviz başlık ve gizli
+                  LED aydınlatma ile yarattığı modern ev estetiği
+                </li>
+                <li data-i18n="dusme-yatak-prod7-li3">
+                  Geometrik bölmelerle kurgulanmış, hem depolama hem de
+                  sergileme alanı sunan fonksiyonel duvar tasarımı
+                </li>
+                <li data-i18n="dusme-yatak-prod7-li4">
+                  Zemin alanını serbest bırakarak yaşam alanını çok amaçlı
+                  kullanıma açan ileri mühendislik çözümü
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -275,67 +519,117 @@
     <section class="products" id="dusme-yatak-8" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">SENSÖRLÜ YAŞAM ÜNİTESİ</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod8-title">
+            SENSÖRLÜ YAŞAM ÜNİTESİ
+          </h2>
           <div class="image">
-            <img src="resimler/dusme-yatak/dusme-yatak-8.webp" width="590" height="350" loading="lazy" alt="Elegance Düşme Yatak" />
+            <img
+              src="resimler/dusme-yatak/dusme-yatak-8.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod8-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Tek hamleyle duvara sıfırlanan, zemin alanını tamamen özgür bırakan ileri düzey mekanik yatak sistemi</li>
-                <li>Panel üzerinde yer alan dokunmatik ikonlarla kontrol edilen, gece ritüellerine uygun ambiyans ışıklandırması</li>
-                <li>Uyku alanıyla aynı geometrik hatları paylaşan, alan verimliliğini maksimize eden minimalist masa entegrasyonu</li>
-                <li>Beyaz lake yüzeylerin sıcak meşe detaylarla birleştiği, ferah ve dingin bir ev atmosferi</li>
+                <li data-i18n="dusme-yatak-prod8-li1">
+                  Tek hamleyle duvara sıfırlanan, zemin alanını tamamen özgür
+                  bırakan ileri düzey mekanik yatak sistemi
+                </li>
+                <li data-i18n="dusme-yatak-prod8-li2">
+                  Panel üzerinde yer alan dokunmatik ikonlarla kontrol edilen,
+                  gece ritüellerine uygun ambiyans ışıklandırması
+                </li>
+                <li data-i18n="dusme-yatak-prod8-li3">
+                  Uyku alanıyla aynı geometrik hatları paylaşan, alan
+                  verimliliğini maksimize eden minimalist masa entegrasyonu
+                </li>
+                <li data-i18n="dusme-yatak-prod8-li4">
+                  Beyaz lake yüzeylerin sıcak meşe detaylarla birleştiği, ferah
+                  ve dingin bir ev atmosferi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <section class="products" id="dusme-yatak-9" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ENTEGRE DUVAR MODÜLÜ</h2>
+          <h2 class="product-title" data-i18n="dusme-yatak-prod9-title">
+            ENTEGRE DUVAR MODÜLÜ
+          </h2>
           <div class="image">
-            <img src="resimler/dusme-yatak/dusme-yatak-9.webp" width="590" height="350" loading="lazy" alt="Elegance Düşme Yatak" />
+            <img
+              src="resimler/dusme-yatak/dusme-yatak-9.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Düşme Yatak"
+              data-i18n="[alt]dusme-yatak-prod9-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Minimalist bir hareketle yatağı gizleyen, odayı saniyeler içinde geniş bir lounge alanına dönüştüren sessiz donanım</li>
-                <li>Başlık kısmına ve yan raflara gömülmüş, gece moduna uygun dinginlik sağlayan endirekt LED mimarisi</li>
-                <li>Mat koyu gri yüzeylerin doğal ahşap dokusuyla birleştiği, modern şehir yaşamına uygun maskülen ve sıcak tasarım</li>
-                <li>Yatağın iki yanına konumlandırılmış, boy dolaplar ve açık nişlerle kurgulanmış yüksek kapasiteli saklama çözümleri</li>
+                <li data-i18n="dusme-yatak-prod9-li1">
+                  Minimalist bir hareketle yatağı gizleyen, odayı saniyeler
+                  içinde geniş bir lounge alanına dönüştüren sessiz donanım
+                </li>
+                <li data-i18n="dusme-yatak-prod9-li2">
+                  Başlık kısmına ve yan raflara gömülmüş, gece moduna uygun
+                  dinginlik sağlayan endirekt LED mimarisi
+                </li>
+                <li data-i18n="dusme-yatak-prod9-li3">
+                  Mat koyu gri yüzeylerin doğal ahşap dokusuyla birleştiği,
+                  modern şehir yaşamına uygun maskülen ve sıcak tasarım
+                </li>
+                <li data-i18n="dusme-yatak-prod9-li4">
+                  Yatağın iki yanına konumlandırılmış, boy dolaplar ve açık
+                  nişlerle kurgulanmış yüksek kapasiteli saklama çözümleri
+                </li>
               </ul>
             </div>
+            <a
+              href="https://wa.me/905057379044"
+              target="_blank"
+              class="product-info-btn"
+              data-i18n="product-detail-btn"
+              >Detaylı Bilgi Alın</a
+            >
           </div>
-          <a
-            href="https://wa.me/905057379044"
-            target="_blank"
-            class="product-info-btn"
-            >Detaylı Bilgi Alın</a
-          >
         </div>
       </div>
     </section>
 
     <section class="product-footer">
       <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları Saklıdır.
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
     </button>
+
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

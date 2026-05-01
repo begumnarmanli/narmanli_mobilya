@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,69 +17,167 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Mutfak Dolapları</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-mutfak">
+      Mutfak | Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-       <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
     <section class="products" id="mutfak-dolaplari-1" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">MUTFAĞINIZDA YENİ NESİL DOKUNUŞ</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod1-title">
+            MUTFAĞINIZDA YENİ NESİL DOKUNUŞ
+          </h2>
           <div class="image">
             <img
-              src="resimler/mutfak/mutfak-1.webp" width="590" height="350" loading="lazy"
+              src="resimler/mutfak/mutfak-1.webp"
+              width="590"
+              height="350"
+              loading="lazy"
               alt="Elegance Mutfak Dolabı"
             />
           </div>
@@ -81,73 +185,129 @@
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Üst modüllerde kullanılan adaçayı yeşili mat panellerle, parmak izi bırakmayan ve ipeksi bir dokunuş sunan modern estetik</li>
-                <li>Alt dolaplardaki sıcak ahşap tonlarını tamamlayan, fırçalanmış pirinç kulplarla kurgulanmış lüks tasarım detayları</li>
-                <li>Tavana kadar uzanan gömme dolap sistemleri ve geniş mutfak adası ile sağlanan, her mutfak gerecine özel saklama çözümü</li>
-                <li>Pişirme, hazırlık ve yıkama istasyonlarının altın oran prensibiyle yerleştirildiği, hareket özgürlüğü sağlayan mutfak mimarisi</li>
+                <li data-i18n="mutfak-prod1-li1">
+                  Üst modüllerde kullanılan adaçayı yeşili mat panellerle,
+                  parmak izi bırakmayan ve ipeksi bir dokunuş sunan modern
+                  estetik
+                </li>
+                <li data-i18n="mutfak-prod1-li2">
+                  Alt dolaplardaki sıcak ahşap tonlarını tamamlayan, fırçalanmış
+                  pirinç kulplarla kurgulanmış lüks tasarım detayları
+                </li>
+                <li data-i18n="mutfak-prod1-li3">
+                  Tavana kadar uzanan gömme dolap sistemleri ve geniş mutfak
+                  adası ile sağlanan, her mutfak gerecine özel saklama çözümü
+                </li>
+                <li data-i18n="mutfak-prod1-li4">
+                  Pişirme, hazırlık ve yıkama istasyonlarının altın oran
+                  prensibiyle yerleştirildiği, hareket özgürlüğü sağlayan mutfak
+                  mimarisi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
-    
     <div class="section-divider"></div>
     <section class="products" id="mutfak-dolaplari-2" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ANTRASİT VE AHŞAP UYUMU</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod2-title">
+            ANTRASİT VE AHŞAP UYUMU
+          </h2>
           <div class="image">
-            <img src="resimler/mutfak/mutfak-2.webp" width="590" height="350" loading="lazy" alt="Elegance Mutfak Dolabı" />
+            <img
+              src="resimler/mutfak/mutfak-2.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Mutfak Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Koyu tonların asaletini ahşabın sıcaklığıyla birleştiren iddialı bir mutfak</li>
-                <li>Mat antrasit yüzeyler ve leke tutmayan özel kaplama seçenekleri</li>
-                <li>Akıllı depolama çözümleriyle her noktada maksimum kullanım alanı</li>
-                <li>Birinci sınıf işçilikle mutfağınıza değer katan modern mimari çizgiler</li>
+                <li data-i18n="mutfak-prod2-li1">
+                  Koyu tonların asaletini ahşabın sıcaklığıyla birleştiren
+                  iddialı bir mutfak
+                </li>
+                <li data-i18n="mutfak-prod2-li2">
+                  Mat antrasit yüzeyler ve leke tutmayan özel kaplama
+                  seçenekleri
+                </li>
+                <li data-i18n="mutfak-prod2-li3">
+                  Akıllı depolama çözümleriyle her noktada maksimum kullanım
+                  alanı
+                </li>
+                <li data-i18n="mutfak-prod2-li4">
+                  Birinci sınıf işçilikle mutfağınıza değer katan modern mimari
+                  çizgiler
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <div class="section-divider"></div>
     <section class="products" id="mutfak-dolaplari-3" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">BEYAZIN FERAH DOKUNUŞU</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod3-title">
+            BEYAZIN FERAH DOKUNUŞU
+          </h2>
           <div class="image">
-            <img src="resimler/mutfak/mutfak-3.webp" width="590" height="350" loading="lazy" alt="Elegance Mutfak Dolabı" />
+            <img
+              src="resimler/mutfak/mutfak-3.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Mutfak Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Mutfak alanınızı daha geniş ve aydınlık gösteren minimalist beyaz tasarımlar</li>
-                <li>Kolay temizlenebilir, pürüzsüz yüzeyler ve darbelere dayanıklı malzeme kalitesi</li>
-                <li>Geniş mutfak adası ve akıllı çekmece sistemleriyle fonksiyonel bir mutfak deneyimi</li>
-                <li>Modern çizgilerin yüksek kaliteli aksesuarlarla mükemmel uyumu</li>
+                <li data-i18n="mutfak-prod3-li1">
+                  Mutfak alanınızı daha geniş ve aydınlık gösteren minimalist
+                  beyaz tasarımlar
+                </li>
+                <li data-i18n="mutfak-prod3-li2">
+                  Kolay temizlenebilir, pürüzsüz yüzeyler ve darbelere dayanıklı
+                  malzeme kalitesi
+                </li>
+                <li data-i18n="mutfak-prod3-li3">
+                  Geniş mutfak adası ve akıllı çekmece sistemleriyle fonksiyonel
+                  bir mutfak deneyimi
+                </li>
+                <li data-i18n="mutfak-prod3-li4">
+                  Modern çizgilerin yüksek kaliteli aksesuarlarla mükemmel uyumu
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -159,24 +319,45 @@
     <section class="products" id="mutfak-dolaplari-4" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">KARAKTERLİ VE SICAK TASARIMLAR</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod4-title">
+            KARAKTERLİ VE SICAK TASARIMLAR
+          </h2>
           <div class="image">
-            <img src="resimler/mutfak/mutfak-4.webp" width="590" height="350" loading="lazy" alt="Elegance Mutfak Dolabı" /> 
+            <img
+              src="resimler/mutfak/mutfak-4.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Mutfak Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Siyahın asaletini doğal ahşap dokusuyla buluşturan, sıcak ve davetkar bir mutfak</li>
-                <li>Country tarzını modern detaylarla harmanlayan özgün dolap kapakları</li>
-                <li>Dayanıklı masif dokulu tezgahlar ve estetik raf sistemleri ile maksimum düzen</li>
-                <li>Şıklığı fonksiyonellikle birleştiren, mutfakta zaman geçirmeyi keyfe dönüştüren detaylar</li>
+                <li data-i18n="mutfak-prod4-li1">
+                  Siyahın asaletini doğal ahşap dokusuyla buluşturan, sıcak ve
+                  davetkar bir mutfak
+                </li>
+                <li data-i18n="mutfak-prod4-li2">
+                  Country tarzını modern detaylarla harmanlayan özgün dolap
+                  kapakları
+                </li>
+                <li data-i18n="mutfak-prod4-li3">
+                  Dayanıklı masif dokulu tezgahlar ve estetik raf sistemleri ile
+                  maksimum düzen
+                </li>
+                <li data-i18n="mutfak-prod4-li4">
+                  Şıklığı fonksiyonellikle birleştiren, mutfakta zaman geçirmeyi
+                  keyfe dönüştüren detaylar
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -188,10 +369,15 @@
     <section class="products" id="mutfak-dolaplari-5" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">MİMARİ ESTETİK VE LÜKS DOKU</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod5-title">
+            MİMARİ ESTETİK VE LÜKS DOKU
+          </h2>
           <div class="image">
             <img
-              src="resimler/mutfak/mutfak-5.webp" width="590" height="350" loading="lazy"
+              src="resimler/mutfak/mutfak-5.webp"
+              width="590"
+              height="350"
+              loading="lazy"
               alt="Elegance Mutfak Dolabı"
             />
           </div>
@@ -199,16 +385,29 @@
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Mermer desenli yüzeylerin doğal ahşap dokusuyla buluştuğu seçkin bir tasarım</li>
-                <li>Mekana derinlik katan boy dolap sistemleri ve ankastre uyumlu modüller</li>
-                <li>Geniş ada mutfak çözümleriyle hem hazırlık alanı hem de şık bir yemek köşesi</li>
-                <li>Kusursuz işçilik ve sessiz çalışan akıllı kapak/çekmece mekanizmaları</li>
+                <li data-i18n="mutfak-prod5-li1">
+                  Mermer desenli yüzeylerin doğal ahşap dokusuyla buluştuğu
+                  seçkin bir tasarım
+                </li>
+                <li data-i18n="mutfak-prod5-li2">
+                  Mekana derinlik katan boy dolap sistemleri ve ankastre uyumlu
+                  modüller
+                </li>
+                <li data-i18n="mutfak-prod5-li3">
+                  Geniş ada mutfak çözümleriyle hem hazırlık alanı hem de şık
+                  bir yemek köşesi
+                </li>
+                <li data-i18n="mutfak-prod5-li4">
+                  Kusursuz işçilik ve sessiz çalışan akıllı kapak/çekmece
+                  mekanizmaları
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -220,24 +419,45 @@
     <section class="products" id="mutfak-dolaplari-6" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ÖZGÜN RENKLER, ESTETİK DETAYLAR</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod6-title">
+            ÖZGÜN RENKLER, ESTETİK DETAYLAR
+          </h2>
           <div class="image">
-            <img src="resimler/mutfak/mutfak-6.webp" width="590" height="350" loading="lazy" alt="Elegance Mutfak Dolabı" />
+            <img
+              src="resimler/mutfak/mutfak-6.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Mutfak Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Mürdüm ve krem tonlarının sıra dışı uyumuyla mutfağınızda fark yaratın</li>
-                <li>Retro esintiler taşıyan camlı kapaklar ve zarif metal kulp detayları</li>
-                <li>Geniş çekmece sistemleri ile mutfak araç gereçleriniz için kusursuz düzen</li>
-                <li>Mat yüzey teknolojisi sayesinde parmak izi bırakmayan, kolay temizlenen dolaplar</li>
+                <li data-i18n="mutfak-prod6-li1">
+                  Mürdüm ve krem tonlarının sıra dışı uyumuyla mutfağınızda fark
+                  yaratın
+                </li>
+                <li data-i18n="mutfak-prod6-li2">
+                  Retro esintiler taşıyan camlı kapaklar ve zarif metal kulp
+                  detayları
+                </li>
+                <li data-i18n="mutfak-prod6-li3">
+                  Geniş çekmece sistemleri ile mutfak araç gereçleriniz için
+                  kusursuz düzen
+                </li>
+                <li data-i18n="mutfak-prod6-li4">
+                  Mat yüzey teknolojisi sayesinde parmak izi bırakmayan, kolay
+                  temizlenen dolaplar
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -249,24 +469,45 @@
     <section class="products" id="mutfak-dolaplari-7" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">KESİNTİSİZ ÇİZGİLER, MİNAMALİST ŞIKLIK</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod7-title">
+            KESİNTİSİZ ÇİZGİLER, MİNAMALİST ŞIKLIK
+          </h2>
           <div class="image">
-            <img src="resimler/mutfak/mutfak-7.webp" width="590" height="350" loading="lazy" alt="Elegance Mutfak Dolabı" />
+            <img
+              src="resimler/mutfak/mutfak-7.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Mutfak Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Kulpsuz dolap kapakları ile pürüzsüz, sakin ve modern bir mutfak tasarımı</li>
-                <li>Ahşap niş detaylarıyla fonksiyonel depolama alanlarını estetikle buluşturun</li>
-                <li>Tavana kadar uzanan modüllerle mutfağınızda maksimum saklama kapasitesi</li>
-                <li>Mat antrasit yüzeylerin doğal ahşap dokusuyla yarattığı üst düzey kontrast</li>
+                <li data-i18n="mutfak-prod7-li1">
+                  Kulpsuz dolap kapakları ile pürüzsüz, sakin ve modern bir
+                  mutfak tasarımı
+                </li>
+                <li data-i18n="mutfak-prod7-li2">
+                  Ahşap niş detaylarıyla fonksiyonel depolama alanlarını
+                  estetikle buluşturun
+                </li>
+                <li data-i18n="mutfak-prod7-li3">
+                  Tavana kadar uzanan modüllerle mutfağınızda maksimum saklama
+                  kapasitesi
+                </li>
+                <li data-i18n="mutfak-prod7-li4">
+                  Mat antrasit yüzeylerin doğal ahşap dokusuyla yarattığı üst
+                  düzey kontrast
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -278,52 +519,95 @@
     <section class="products" id="mutfak-dolaplari-8" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOĞAL DOKULAR, AYDINLIK MEKANLAR</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod8-title">
+            DOĞAL DOKULAR, AYDINLIK MEKANLAR
+          </h2>
           <div class="image">
-            <img src="resimler/mutfak/mutfak-8.webp" width="590" height="350" loading="lazy" alt="Elegance Mutfak Dolabı" />
+            <img
+              src="resimler/mutfak/mutfak-8.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Mutfak Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Açık meşe ve beyazın uyumuyla mutfağınızda ferah bir İskandinav esintisi</li>
-                <li>Gün ışığını en iyi şekilde yansıtan mat yüzeyler ve yalın tasarım dili</li>
-                <li>Ada mutfak ile entegre kahvaltı barı sayesinde sosyal ve kullanışlı bir alan</li>
-                <li>Her ihtiyaca uygun geniş çekmeceler ve gizli bölmelerle kusursuz organizasyon</li>
+                <li data-i18n="mutfak-prod8-li1">
+                  Açık meşe ve beyazın uyumuyla mutfağınızda ferah bir
+                  İskandinav esintisi
+                </li>
+                <li data-i18n="mutfak-prod8-li2">
+                  Gün ışığını en iyi şekilde yansıtan mat yüzeyler ve yalın
+                  tasarım dili
+                </li>
+                <li data-i18n="mutfak-prod8-li3">
+                  Ada mutfak ile entegre kahvaltı barı sayesinde sosyal ve
+                  kullanışlı bir alan
+                </li>
+                <li data-i18n="mutfak-prod8-li4">
+                  Her ihtiyaca uygun geniş çekmeceler ve gizli bölmelerle
+                  kusursuz organizasyon
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <div class="section-divider"></div>
     <section class="products" id="mutfak-dolaplari-9" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOĞANIN ASALETİ MUTFAĞINIZDA</h2>
+          <h2 class="product-title" data-i18n="mutfak-prod9-title">
+            DOĞANIN ASALETİ MUTFAĞINIZDA
+          </h2>
           <div class="image">
-            <img src="resimler/mutfak/mutfak-9.webp" width="590" height="350" loading="lazy" alt="Elegance Mutfak Dolabı" />
+            <img
+              src="resimler/mutfak/mutfak-9.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Mutfak Dolabı"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Zümrüt yeşili ve sıcak kum beji tonlarıyla mutfağınızda derinlik ve karakter yaratın</li>
-                <li>Tezgah altı LED aydınlatma detaylarıyla hem fonksiyonel hem de estetik bir çalışma alanı</li>
-                <li>Minimalist ada mutfak tasarımı ve modern dikey dokulu panel seçenekleri</li>
-                <li>Mat lake yüzey teknolojisi ve sessiz sürgülü çekmece sistemleriyle konforlu kullanım</li>
+                <li data-i18n="mutfak-prod9-li1">
+                  Zümrüt yeşili ve sıcak kum beji tonlarıyla mutfağınızda
+                  derinlik ve karakter yaratın
+                </li>
+                <li data-i18n="mutfak-prod9-li2">
+                  Tezgah altı LED aydınlatma detaylarıyla hem fonksiyonel hem de
+                  estetik bir çalışma alanı
+                </li>
+                <li data-i18n="mutfak-prod9-li3">
+                  Minimalist ada mutfak tasarımı ve modern dikey dokulu panel
+                  seçenekleri
+                </li>
+                <li data-i18n="mutfak-prod9-li4">
+                  Mat lake yüzey teknolojisi ve sessiz sürgülü çekmece
+                  sistemleriyle konforlu kullanım
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -333,13 +617,18 @@
 
     <section class="product-footer">
       <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları Saklıdır.
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
     </button>
+
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

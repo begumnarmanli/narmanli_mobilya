@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,87 +17,198 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Gardırop</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-gardırop">
+      Gardırop - Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-
-      <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
     <section class="products" id="gardırop-1" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DETAYLARDA GİZLİ MÜKEMMELLİK</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod1-title">
+            DETAYLARDA GİZLİ MÜKEMMELLİK
+          </h2>
           <div class="image">
             <img
-              src="resimler/gardırop/gardırop-1.webp" width="590" height="350" loading="lazy"
+              src="resimler/gardırop/gardırop-1.webp"
+              width="590"
+              height="350"
+              loading="lazy"
               alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod1-alt"
             />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Çizilmelere karşı dayanıklı, yüksek yoğunluklu MDF-Lam gövde ve lüks kaplama detayları</li>
-                <li>Giysilerinizi ve aksesuarlarınızı en doğru ışık altında görmenizi sağlayan zarif aydınlatma çözümü</li>
-                <li>Yatak seviyenizle tam uyumlu, geniş depolama hacmi sunan iki derin çekmece modülü</li>
-                <li>Tasarımdan montaja kadar her aşamada Narmanlı Mobilya'nın titiz zanaatkarlığı</li>
+                <li data-i18n="gardırop-prod1-li1">
+                  Çizilmelere karşı dayanıklı, yüksek yoğunluklu MDF-Lam gövde
+                  ve lüks kaplama detayları
+                </li>
+                <li data-i18n="gardırop-prod1-li2">
+                  Giysilerinizi ve aksesuarlarınızı en doğru ışık altında
+                  görmenizi sağlayan zarif aydınlatma çözümü
+                </li>
+                <li data-i18n="gardırop-prod1-li3">
+                  Yatak seviyenizle tam uyumlu, geniş depolama hacmi sunan iki
+                  derin çekmece modülü
+                </li>
+                <li data-i18n="gardırop-prod1-li4">
+                  Tasarımdan montaja kadar her aşamada Narmanlı Mobilya'nın
+                  titiz zanaatkarlığı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -102,24 +219,46 @@
     <section class="products" id="gardırop-2" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOLABINIZDAKİ PRESTİJLİ SESSİZLİK</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod2-title">
+            DOLABINIZDAKİ PRESTİJLİ SESSİZLİK
+          </h2>
           <div class="image">
-            <img src="resimler/gardırop/gardırop-2.webp" width="590" height="350" loading="lazy" alt="Elegance Gardırop" />
+            <img
+              src="resimler/gardırop/gardırop-2.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod2-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>En geniş kapaklarda bile ipeksi bir kayma hissi sunan, sarsıntısız ve sessiz sürgülü mekanizmalar</li>
-                <li>Cam kapak kenarlarına entegre özel fırça sistemleriyle kıyafetlerinizi her zaman temiz ve taze tutun</li>
-                <li>Darbelere dayanıklı temperli camlar ve neme karşı dirençli birinci sınıf gövde yapısı</li>
-                <li>Uzman montaj ekibimizle Gaziantep genelinde yerinde ölçü ve kusursuz kurulum hizmeti</li>
+                <li data-i18n="gardırop-prod2-li1">
+                  En geniş kapaklarda bile ipeksi bir kayma hissi sunan,
+                  sarsıntısız ve sessiz sürgülü mekanizmalar
+                </li>
+                <li data-i18n="gardırop-prod2-li2">
+                  Cam kapak kenarlarına entegre özel fırça sistemleriyle
+                  kıyafetlerinizi her zaman temiz ve taze tutun
+                </li>
+                <li data-i18n="gardırop-prod2-li3">
+                  Darbelere dayanıklı temperli camlar ve neme karşı dirençli
+                  birinci sınıf gövde yapısı
+                </li>
+                <li data-i18n="gardırop-prod2-li4">
+                  Uzman montaj ekibimizle yerinde ölçü ve kusursuz kurulum
+                  hizmeti
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -130,24 +269,46 @@
     <section class="products" id="gardırop-3" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">FERAH MEKANLAR İÇİN AKILLI ÇÖZÜMLER</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod3-title">
+            FERAH MEKANLAR İÇİN AKILLI ÇÖZÜMLER
+          </h2>
           <div class="image">
-            <img src="resimler/gardırop/gardırop-3.webp" width="590" height="350" loading="lazy" alt="Elegance Gardırop" />
+            <img
+              src="resimler/gardırop/gardırop-3.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod3-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Doğal ışığı odanın içine hapseden cam panellerle karanlık köşelere veda edin</li>
-                <li>Neme ve darbelere dayanıklı, yüksek kalite standartlarında malzeme seçimi ve üretim</li>
-                <li>İskandinav sadeliğini yansıtan kare bölmeli kapak tasarımıyla yatak odanıza modern bir derinlik katın</li>
-                <li>Tasarımdan yerinde montaja kadar profesyonel ekiplerimizle sorunsuz ve şık bir kurulum deneyimi</li>
+                <li data-i18n="gardırop-prod3-li1">
+                  Doğal ışığı odanın içine hapseden cam panellerle karanlık
+                  köşelere veda edin
+                </li>
+                <li data-i18n="gardırop-prod3-li2">
+                  Neme ve darbelere dayanıklı, yüksek kalite standartlarında
+                  malzeme seçimi ve üretim
+                </li>
+                <li data-i18n="gardırop-prod3-li3">
+                  İskandinav sadeliğini yansıtan kare bölmeli kapak tasarımıyla
+                  yatak odanıza modern bir derinlik katın
+                </li>
+                <li data-i18n="gardırop-prod3-li4">
+                  Tasarımdan yerinde montaja kadar profesyonel ekiplerimizle
+                  sorunsuz ve şık bir kurulum deneyimi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -158,24 +319,46 @@
     <section class="products" id="gardırop-4" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ZİRVEDE BİR DÜZEN: KOLEKSİYONERLERE ÖZEL</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod4-title">
+            ZİRVEDE BİR DÜZEN: KOLEKSİYONERLERE ÖZEL
+          </h2>
           <div class="image">
-            <img src="resimler/gardırop/gardırop-4.webp" width="590" height="350" loading="lazy" alt="Elegance Gardırop" /> 
+            <img
+              src="resimler/gardırop/gardırop-4.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod4-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Saat, mücevher ve özel eşyalarınız için tasarlanmış şık ada modülüyle odanızın odak noktasını belirleyin</li>
-                <li>Askı alanlarından ayakkabı raflarına kadar her detayı titizlikle kurgulanmış profesyonel bir organizasyon</li>
-                <li>Profesyonel ekiplerimizle en zorlu mekanlarda bile sorunsuz ve şık bir kurulum deneyimi</li>
-                <li>Gereksiz tüm detaylardan arındırılmış, sadece fonksiyonu ve estetiği ön plana çıkaran imza tasarım</li>
+                <li data-i18n="gardırop-prod4-li1">
+                  Saat, mücevher ve özel eşyalarınız için tasarlanmış şık ada
+                  modülüyle odanızın odak noktasını belirleyin
+                </li>
+                <li data-i18n="gardırop-prod4-li2">
+                  Askı alanlarından ayakkabı raflarına kadar her detayı
+                  titizlikle kurgulanmış profesyonel bir organizasyon
+                </li>
+                <li data-i18n="gardırop-prod4-li3">
+                  Profesyonel ekiplerimizle en zorlu mekanlarda bile sorunsuz ve
+                  şık bir kurulum deneyimi
+                </li>
+                <li data-i18n="gardırop-prod4-li4">
+                  Gereksiz tüm detaylardan arındırılmış, sadece fonksiyonu ve
+                  estetiği ön plana çıkaran imza tasarım
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -186,7 +369,9 @@
     <section class="products" id="gardırop-5" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">KÖŞE GARDROP VE ADA ÜNİTESİ</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod5-title">
+            KÖŞE GARDIROP VE ADA ÜNİTESİ
+          </h2>
           <div class="image">
             <img
               src="resimler/gardırop/gardırop-5.webp"
@@ -194,22 +379,36 @@
               height="350"
               loading="lazy"
               alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod5-alt"
             />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Odanızın köşelerini işlevsel bir sanat eserine dönüştüren, boydan boya sürgülü panel sistemi</li>
-                <li>Aksesuarlarınız için mermer tablalı ek depolama alanı ile giyinme odanızda butik bir konfor alanı yaratın</li>
-                <li>Sadece kıyafetlerinizi saklamakla kalmayan, odanızı üst düzey bir butik mağaza atmosferine taşıyan imza bir yerleşim</li>
-                <li>Doğal ahşap çıtaların yarattığı soft görünüm sayesinde, büyük hacmine rağmen odada hafiflik hissi</li>
+                <li data-i18n="gardırop-prod5-li1">
+                  Odanızın köşelerini işlevsel bir sanat eserine dönüştüren,
+                  boydan boya sürgülü panel sistemi
+                </li>
+                <li data-i18n="gardırop-prod5-li2">
+                  Aksesuarlarınız için mermer tablalı ek depolama alanı ile
+                  giyinme odanızda butik bir konfor alanı yaratın
+                </li>
+                <li data-i18n="gardırop-prod5-li3">
+                  Sadece kıyafetlerinizi saklamakla kalmayan, odanızı üst düzey
+                  bir butik mağaza atmosferine taşıyan imza bir yerleşim
+                </li>
+                <li data-i18n="gardırop-prod5-li4">
+                  Doğal ahşap çıtaların yarattığı soft görünüm sayesinde, büyük
+                  hacmine rağmen odada hafiflik hissi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -220,24 +419,46 @@
     <section class="products" id="gardırop-6" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOĞAL MEŞENİN KESİNTİSİZ ASALETİ</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod6-title">
+            DOĞAL MEŞENİN KESİNTİSİZ ASALETİ
+          </h2>
           <div class="image">
-            <img src="resimler/gardırop/gardırop-6.webp" width="590" height="350" loading="lazy" alt="Elegance Gardırop" />
+            <img
+              src="resimler/gardırop/gardırop-6.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod6-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Tavandan yere kadar uzanan dikey meşe panellerle yatak odanızda daha yüksek ve ferah bir tavan algısı</li>
-                <li>Tasarıma modern bir imza katan, ergonomik tutuş sağlayan dikey metal kulp detayları</li>
-                <li>Dolap üstünde konumlanan sıcak LED aydınlatmalarla odanıza derinlik katan yumuşak bir gece ambiyansı</li>
-                <li>Sade çizgileriyle karmaşadan uzak, sadece huzura ve düzene odaklanan geniş saklama hacmi</li>
+                <li data-i18n="gardırop-prod6-li1">
+                  Tavandan yere kadar uzanan dikey meşe panellerle yatak
+                  odanızda daha yüksek ve ferah bir tavan algısı
+                </li>
+                <li data-i18n="gardırop-prod6-li2">
+                  Tasarıma modern bir imza katan, ergonomik tutuş sağlayan dikey
+                  metal kulp detayları
+                </li>
+                <li data-i18n="gardırop-prod6-li3">
+                  Dolap üstünde konumlanan sıcak LED aydınlatmalarla odanıza
+                  derinlik katan yumuşak bir gece ambiyansı
+                </li>
+                <li data-i18n="gardırop-prod6-li4">
+                  Sade çizgileriyle karmaşadan uzak, sadece huzura ve düzene
+                  odaklanan geniş saklama hacmi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -248,24 +469,47 @@
     <section class="products" id="gardırop-7" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">LÜKSÜN SESSİZLİĞİ: AYDINLIK GİYİNME ODASI TASARIMI</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod7-title">
+            LÜKSÜN SESSİZLİĞİ: AYDINLIK GİYİNME ODASI TASARIMI
+          </h2>
           <div class="image">
-            <img src="resimler/gardırop/gardırop-7.webp" width="590" height="350" loading="lazy" alt="Elegance Gardırop" />
+            <img
+              src="resimler/gardırop/gardırop-7.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod7-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Odanızın formuna tam uyum sağlayan monoblok kapak yapısıyla, yerden tavana kesintisiz bir depolama mimarisi</li>
-                <li>Tavan birleşim hattına entegre edilen LED aydınlatmalarla, odanıza ferahlık ve derinlik katan ışık konforu</li>
-                <li>Saat, takı ve kişisel koleksiyonlarınız için tasarlanmış mermer üst tablalı merkez ünitesiyle, evinizde profesyonel bir butik deneyimi</li>
-                <li>Mat beyazın asaletini doğal meşe dokusuyla birleştiren, gözü yormayan sade ve prestijli bir yaşam alanı</li>
+                <li data-i18n="gardırop-prod7-li1">
+                  Odanızın formuna tam uyum sağlayan monoblok kapak yapısıyla,
+                  yerden tavana kesintisiz bir depolama mimarisi
+                </li>
+                <li data-i18n="gardırop-prod7-li2">
+                  Tavan birleşim hattına entegre edilen LED aydınlatmalarla,
+                  odanıza ferahlık ve derinlik katan ışık konforu
+                </li>
+                <li data-i18n="gardırop-prod7-li3">
+                  Saat, takı ve kişisel koleksiyonlarınız için tasarlanmış
+                  mermer üst tablalı merkez ünitesiyle, evinizde profesyonel bir
+                  butik deneyimi
+                </li>
+                <li data-i18n="gardırop-prod7-li4">
+                  Mat beyazın asaletini doğal meşe dokusuyla birleştiren, gözü
+                  yormayan sade ve prestijli bir yaşam alanı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -276,51 +520,98 @@
     <section class="products" id="gardırop-8" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DİNGİN TONLARIN MODERN UYUMU</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod8-title">
+            DİNGİN TONLARIN MODERN UYUMU
+          </h2>
           <div class="image">
-            <img src="resimler/gardırop/gardırop-8.webp" width="590" height="350" loading="lazy" alt="Elegance Gardırop" />
+            <img
+              src="resimler/gardırop/gardırop-8.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod8-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Doğadan ilham alan huzurlu renk paletiyle yatak odanızda sakinleştirici bir odak noktası oluşturun</li>
-                <li>Gardırop sürekliliğini bozan ahşap niş detayı ve aydınlatmalarla en sevdiğiniz parçaları şık bir sergi alanına dönüştürün</li>
-                <li>Tasarımı dikeyde bölen siyah metal kulp detaylarıyla modern ve karakter sahibi bir dokunuş</li>
-                <li>Odanın genelindeki ahşap dokularla tam uyum sağlayan, karmaşadan uzak ve ferah bir depolama mimarisi</li>
+                <li data-i18n="gardırop-prod8-li1">
+                  Doğadan ilham alan huzurlu renk paletiyle yatak odanızda
+                  sakinleştirici bir odak noktası oluşturun
+                </li>
+                <li data-i18n="gardırop-prod8-li2">
+                  Gardırop sürekliliğini bozan ahşap niş detayı ve
+                  aydınlatmalarla en sevdiğiniz parçaları şık bir sergi alanına
+                  dönüştürün
+                </li>
+                <li data-i18n="gardırop-prod8-li3">
+                  Tasarımı dikeyde bölen siyah metal kulp detaylarıyla modern ve
+                  karakter sahibi bir dokunuş
+                </li>
+                <li data-i18n="gardırop-prod8-li4">
+                  Odanın genelindeki ahşap dokularla tam uyum sağlayan,
+                  karmaşadan uzak ve ferah bir depolama mimarisi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <section class="products" id="gardırop-9" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">MODERN VE FONKSİYONEL GARDROP</h2>
+          <h2 class="product-title" data-i18n="gardırop-prod9-title">
+            MODERN VE FONKSİYONEL GARDIROP
+          </h2>
           <div class="image">
-            <img src="resimler/gardırop/gardırop-9.webp" width="590" height="350" loading="lazy" alt="Elegance Gardırop" />
+            <img
+              src="resimler/gardırop/gardırop-9.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Gardırop"
+              data-i18n="[alt]gardırop-prod9-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Parmak izi bırakmayan mat kapaklar ve tasarıma dikey bir imza atan ince, antrasit entegre kulp detayları</li>
-                <li>Gardırobun merkezinde yer alan, aydınlatmalı şeffaf cam bölme ile en sevdiğiniz kıyafetlerinizi şık birer sergi objesine dönüştürün</li>
-                <li>Askı alanlarından raf sistemlerine kadar, her detayı titizlikle kurgulanmış profesyonel bir organizasyon</li>
-                <li>Mekanı olduğundan daha yüksek ve ferah gösteren, boydan boya uzanan monoblok gövde yapısı</li>
+                <li data-i18n="gardırop-prod9-li1">
+                  Parmak izi bırakmayan mat kapaklar ve tasarıma dikey bir imza
+                  atan ince, antrasit entegre kulp detayları
+                </li>
+                <li data-i18n="gardırop-prod9-li2">
+                  Gardırobun merkezinde yer alan, aydınlatmalı şeffaf cam bölme
+                  ile en sevdiğiniz kıyafetlerinizi şık birer sergi objesine
+                  dönüştürün
+                </li>
+                <li data-i18n="gardırop-prod9-li3">
+                  Askı alanlarından raf sistemlerine kadar, her detayı
+                  titizlikle kurgulanmış profesyonel bir organizasyon
+                </li>
+                <li data-i18n="gardırop-prod9-li4">
+                  Mekanı olduğundan daha yüksek ve ferah gösteren, boydan boya
+                  uzanan monoblok gövde yapısı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -330,13 +621,18 @@
 
     <section class="product-footer">
       <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları Saklıdır.
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
     </button>
+
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

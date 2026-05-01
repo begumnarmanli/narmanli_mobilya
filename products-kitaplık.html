@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,89 +17,200 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Kitaplık</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-kitaplik">
+      Kitaplık - Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-      <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
-    <section class="products" id="kitaplık-1" data-scroll-color="dark">
+    <section class="products" id="kitaplik-1" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">KAVİSLİ MODERN KİTAPLIK</h2>
+          <h2 class="product-title" data-i18n="kitaplik-prod1-title">
+            KAVİSLİ MODERN KİTAPLIK
+          </h2>
           <div class="image">
             <img
-              src="resimler/kitaplık/kitaplık-1.webp" 
+              src="resimler/kitaplık/kitaplık-1.webp"
               width="590"
               height="350"
               loading="lazy"
               alt="Elegance Kitaplık"
+              data-i18n="[alt]kitaplik-prod1-alt"
             />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Odanıza sanatsal bir derinlik ve modern bir imza katan, kavisli ve akıcı bir yerleşim mimarisi</li>
-                <li>Rafların altına gizlenmiş LED şeritler sayesinde, kitaplarınızı ve objelerinizi en doğru ışık altında sergileme imkanı</li>
-                <li>Sıcak ahşap dokusunun modern metal kavislerle mükemmel birleşimiyle, yaşam alanınızda sofistike bir atmosfer</li>
-                <li>Yatay ve dikey raf düzenleriyle, kitaplardan aksesuarlara kadar her parçayı şık birer sergi objesine dönüştüren fonksiyonellik</li>
+                <li data-i18n="kitaplik-prod1-li1">
+                  Odanıza sanatsal bir derinlik ve modern bir imza katan,
+                  kavisli ve akıcı bir yerleşim mimarisi
+                </li>
+                <li data-i18n="kitaplik-prod1-li2">
+                  Rafların altına gizlenmiş LED şeritler sayesinde,
+                  kitaplarınızı ve objelerinizi en doğru ışık altında sergileme
+                  imkanı
+                </li>
+                <li data-i18n="kitaplik-prod1-li3">
+                  Sıcak ahşap dokusunun modern metal kavislerle mükemmel
+                  birleşimiyle, yaşam alanınızda sofistike bir atmosfer
+                </li>
+                <li data-i18n="kitaplik-prod1-li4">
+                  Yatay ve dikey raf düzenleriyle, kitaplardan aksesuarlara
+                  kadar her parçayı şık birer sergi objesine dönüştüren
+                  fonksiyonellik
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -101,27 +218,49 @@
       </div>
     </section>
 
-    <section class="products" id="kitaplık-2" data-scroll-color="light">
+    <section class="products" id="kitaplik-2" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">PANORAMİK KİTAPLIK SİSTEMİ</h2>
+          <h2 class="product-title" data-i18n="kitaplik-prod2-title">
+            PANORAMİK KİTAPLIK SİSTEMİ
+          </h2>
           <div class="image">
-            <img src="resimler/kitaplık/kitaplık-2.webp" width="590" height="350" loading="lazy" alt="Elegance Kitaplık" />
+            <img
+              src="resimler/kitaplık/kitaplık-2.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Kitaplık"
+              data-i18n="[alt]kitaplik-prod2-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Her rafa entegre edilmiş sıcak LED aydınlatmalarla objelerinizi öne çıkaran derinlikli sergileme alanı</li>
-                <li>Tasarımı mühürleyen ve ahşap sıcaklığını tüm yüzeye yayan masif görünümlü şık arka panel</li>
-                <li>Farklı boyutlardaki dikey ve yatay bölmelerle kitaplarınız ve aksesuarlarınız için kurgulanmış disiplinli yerleşim</li>
-                <li>Karmaşadan uzak, sadece işlevselliğe ve görsel huzura odaklanan zamansız bir kütüphane tasarımı</li>
+                <li data-i18n="kitaplik-prod2-li1">
+                  Her rafa entegre edilmiş sıcak LED aydınlatmalarla
+                  objelerinizi öne çıkaran derinlikli sergileme alanı
+                </li>
+                <li data-i18n="kitaplik-prod2-li2">
+                  Tasarımı mühürleyen ve ahşap sıcaklığını tüm yüzeye yayan
+                  masif görünümlü şık arka panel
+                </li>
+                <li data-i18n="kitaplik-prod2-li3">
+                  Farklı boyutlardaki dikey ve yatay bölmelerle kitaplarınız ve
+                  aksesuarlarınız için kurgulanmış disiplinli yerleşim
+                </li>
+                <li data-i18n="kitaplik-prod2-li4">
+                  Karmaşadan uzak, sadece işlevselliğe ve görsel huzura
+                  odaklanan zamansız bir kütüphane tasarımı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -129,27 +268,49 @@
       </div>
     </section>
 
-    <section class="products" id="kitaplık-3" data-scroll-color="dark">
+    <section class="products" id="kitaplik-3" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">YAŞAYAN KÜTÜPHANE: AHŞAP VE IŞIK DENGESİ</h2>
+          <h2 class="product-title" data-i18n="kitaplik-prod3-title">
+            YAŞAYAN KÜTÜPHANE: AHŞAP VE IŞIK DENGESİ
+          </h2>
           <div class="image">
-            <img src="resimler/kitaplık/kitaplık-3.webp" width="590" height="350" loading="lazy" alt="Elegance Kitaplık" />
+            <img
+              src="resimler/kitaplık/kitaplık-3.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Kitaplık"
+              data-i18n="[alt]kitaplik-prod3-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Her rafa entegre edilen sıcak ışık bantlarıyla kitaplarınızı birer sanat objesine dönüştüren sergileme</li>
-                <li>Tasarımı mühürleyen, masif dokuyu tüm yüzeye yayan şık ve dayanıklı arka plan şıklığı</li>
-                <li>Farklı boyutlardaki bölmelerle kurgulanmış, hem görsel huzura hem işleve odaklanan yerleşim</li>
-                <li>Mekanı olduğundan geniş gösteren, karmaşadan uzak bir kütüphane duruşu</li>
+                <li data-i18n="kitaplik-prod3-li1">
+                  Her rafa entegre edilen sıcak ışık bantlarıyla kitaplarınızı
+                  birer sanat objesine dönüştüren sergileme
+                </li>
+                <li data-i18n="kitaplik-prod3-li2">
+                  Tasarımı mühürleyen, masif dokuyu tüm yüzeye yayan şık ve
+                  dayanıklı arka plan şıklığı
+                </li>
+                <li data-i18n="kitaplik-prod3-li3">
+                  Farklı boyutlardaki bölmelerle kurgulanmış, hem görsel huzura
+                  hem işleve odaklanan yerleşim
+                </li>
+                <li data-i18n="kitaplik-prod3-li4">
+                  Mekanı olduğundan geniş gösteren, karmaşadan uzak bir
+                  kütüphane duruşu
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -157,27 +318,50 @@
       </div>
     </section>
 
-    <section class="products" id="kitaplık-4" data-scroll-color="light">
+    <section class="products" id="kitaplik-4" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">AHŞAP VE METALİN UYUMU</h2>
+          <h2 class="product-title" data-i18n="kitaplik-prod4-title">
+            AHŞAP VE METALİN UYUMU
+          </h2>
           <div class="image">
-            <img src="resimler/kitaplık/kitaplık-4.webp" width="590" height="350" loading="lazy" alt="Elegance Kitaplık" />
+            <img
+              src="resimler/kitaplık/kitaplık-4.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Kitaplık"
+              data-i18n="[alt]kitaplik-prod4-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Siyahın otoriter duruşunu sıcak ahşap dokusuyla kıran, modern ofis estetiğini yaşam alanına taşıyan cesur tasarım</li>
-                <li>Kitapların arka paneldeki doğal dokuyla birleşerek mekanın derinliğini artıran birer dekoratif unsur haline gelmesi</li>
-                <li>Çalışma masasıyla monoblok bir bütünlük kuran, profesyonel üretim süreçleri için optimize edilmiş geniş depolama disiplini</li>
-                <li>İşlevselliğe ve görsel huzura odaklanan zamansız bir kütüphane ve çalışma alanı tasarımı</li>
+                <li data-i18n="kitaplik-prod4-li1">
+                  Siyahın otoriter duruşunu sıcak ahşap dokusuyla kıran, modern
+                  ofis estetiğini yaşam alanına taşıyan cesur tasarım
+                </li>
+                <li data-i18n="kitaplik-prod4-li2">
+                  Kitapların arka paneldeki doğal dokuyla birleşerek mekanın
+                  derinliğini artıran birer dekoratif unsur haline gelmesi
+                </li>
+                <li data-i18n="kitaplik-prod4-li3">
+                  Çalışma masasıyla monoblok bir bütünlük kuran, profesyonel
+                  üretim süreçleri için optimize edilmiş geniş depolama
+                  disiplini
+                </li>
+                <li data-i18n="kitaplik-prod4-li4">
+                  İşlevselliğe ve görsel huzura odaklanan zamansız bir kütüphane
+                  ve çalışma alanı tasarımı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -185,10 +369,12 @@
       </div>
     </section>
 
-    <section class="products" id="kitaplık-5" data-scroll-color="dark">
+    <section class="products" id="kitaplik-5" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DİNAMİK GEOMETRİK KÜTÜPHANE</h2>
+          <h2 class="product-title" data-i18n="kitaplik-prod5-title">
+            DİNAMİK GEOMETRİK KÜTÜPHANE
+          </h2>
           <div class="image">
             <img
               src="resimler/kitaplık/kitaplık-5.webp"
@@ -196,22 +382,36 @@
               height="350"
               loading="lazy"
               alt="Elegance Kitaplık"
+              data-i18n="[alt]kitaplik-prod5-alt"
             />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Alışılmışın dışındaki çapraz bölmelerle, kitaplarınızı durağanlıktan kurtaran hareketli bir görsel ritim</li>
-                <li>Dikey ana taşıyıcıların arasına yerleştirilen diyagonal kesimlerle, yaşam alanınıza modern bir mühendislik dokunuşu</li>
-                <li>Arka paneli olmayan bölmelerle gün ışığının süzülmesine izin veren, odayı boğmayan şeffaf bir depolama mimarisi</li>
-                <li>Sade bir duvarı, iç içe geçen geometrik çizgilerle yaşayan bir galeriye dönüştüren ikonik tasarım dili</li>
+                <li data-i18n="kitaplik-prod5-li1">
+                  Alışılmışın dışındaki çapraz bölmelerle, kitaplarınızı
+                  durağanlıktan kurtaran hareketli bir görsel ritim
+                </li>
+                <li data-i18n="kitaplik-prod5-li2">
+                  Dikey ana taşıyıcıların arasına yerleştirilen diyagonal
+                  kesimlerle, yaşam alanınıza modern bir mühendislik dokunuşu
+                </li>
+                <li data-i18n="kitaplik-prod5-li3">
+                  Arka paneli olmayan bölmelerle gün ışığının süzülmesine izin
+                  veren, odayı boğmayan şeffaf bir depolama mimarisi
+                </li>
+                <li data-i18n="kitaplik-prod5-li4">
+                  Sade bir duvarı, iç içe geçen geometrik çizgilerle yaşayan bir
+                  galeriye dönüştüren ikonik tasarım dili
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -219,27 +419,51 @@
       </div>
     </section>
 
-    <section class="products" id="kitaplık-6" data-scroll-color="light">
+    <section class="products" id="kitaplik-6" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">RAYLI MERDİVEN SİSTEMLİ KÜTÜPHANE</h2>
+          <h2 class="product-title" data-i18n="kitaplik-prod6-title">
+            RAYLI MERDİVEN SİSTEMLİ KÜTÜPHANE
+          </h2>
           <div class="image">
-            <img src="resimler/kitaplık/kitaplık-6.webp" width="590" height="350" loading="lazy" alt="Elegance Kitaplık" />
+            <img
+              src="resimler/kitaplık/kitaplık-6.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Kitaplık"
+              data-i18n="[alt]kitaplik-prod6-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Tavandaki metal ray üzerinde akıcı hareket eden masif ahşap merdiven ile en üst raflara bile profesyonel ve ergonomik erişim</li>
-                <li>atay raf düzenini çapraz bölmelerle kesen, tasarımın rijitliğini ve görsel karakterini artıran statik bir mimari imza</li>
-                <li>Arka panele gömülü, tüm rafları eşit düzeyde aydınlatan ve mekana derinlik katan mimari ışık tasarımı</li>
-                <li>Kitap ve sanat objeleri için kurgulanmış, kesintisiz ve geniş hacimli sergileme alanı</li>
+                <li data-i18n="kitaplik-prod6-li1">
+                  Tavandaki metal ray üzerinde akıcı hareket eden masif ahşap
+                  merdiven ile en üst raflara bile profesyonel ve ergonomik
+                  erişim
+                </li>
+                <li data-i18n="kitaplik-prod6-li2">
+                  Yatay raf düzenini çapraz bölmelerle kesen, tasarımın
+                  rijitliğini ve görsel karakterini artıran statik bir mimari
+                  imza
+                </li>
+                <li data-i18n="kitaplik-prod6-li3">
+                  Arka panele gömülü, tüm rafları eşit düzeyde aydınlatan ve
+                  mekana derinlik katan mimari ışık tasarımı
+                </li>
+                <li data-i18n="kitaplik-prod6-li4">
+                  Kitap ve sanat objeleri için kurgulanmış, kesintisiz ve geniş
+                  hacimli sergileme alanı
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -252,16 +476,35 @@
         <div class="box-product-item">
           <h2 class="product-title">GEOMETRİK MODÜLER RAF</h2>
           <div class="image">
-            <img src="resimler/kitaplık/kitaplık-7.webp" width="590" height="350" loading="lazy" alt="Elegance Kitaplık" />
+            <img
+              src="resimler/kitaplık/kitaplık-7.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Kitaplık"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Keskin hatlı altıgenlerle yumuşak kavisli eliptik modüllerin birleştiği, duvarı bir tuval gibi kullanan özgün kompozisyon</li>
-                <li>Arka panelsiz, doğrudan duvara monte edilen yapısı sayesinde mekanın ferahlığını bozmayan şeffaf sergileme dili</li>
-                <li>Kitaplardan dekoratif objelere kadar her parça için tanımlanmış, gözü yormayan disiplinli ve izole depolama alanları</li>
-                <li>Dikey veya yatay eklenebilen modüler yapısı sayesinde her duvar yüzeyine adapte edilebilen dinamik tasarım</li>
+                <li>
+                  Keskin hatlı altıgenlerle yumuşak kavisli eliptik modüllerin
+                  birleştiği, duvarı bir tuval gibi kullanan özgün kompozisyon
+                </li>
+                <li>
+                  Arka panelsiz, doğrudan duvara monte edilen yapısı sayesinde
+                  mekanın ferahlığını bozmayan şeffaf sergileme dili
+                </li>
+                <li>
+                  Kitaplardan dekoratif objelere kadar her parça için
+                  tanımlanmış, gözü yormayan disiplinli ve izole depolama
+                  alanları
+                </li>
+                <li>
+                  Dikey veya yatay eklenebilen modüler yapısı sayesinde her
+                  duvar yüzeyine adapte edilebilen dinamik tasarım
+                </li>
               </ul>
             </div>
             <a
@@ -275,69 +518,122 @@
       </div>
     </section>
 
-    <section class="products" id="kitaplık-8" data-scroll-color="light">
+    <section class="products" id="kitaplik-8" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">İÇ İÇE GEÇEN GEOMETRİ: MODÜLER LABİRENT RAF</h2>
+          <h2 class="product-title" data-i18n="kitaplik-prod8-title">
+            İÇ İÇE GEÇEN GEOMETRİ: MODÜLER LABİRENT RAF
+          </h2>
           <div class="image">
-            <img src="resimler/kitaplık/kitaplık-8.webp" width="590" height="350" loading="lazy" alt="Elegance Kitaplık" />
+            <img
+              src="resimler/kitaplık/kitaplık-8.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Kitaplık"
+              data-i18n="[alt]kitaplik-prod8-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Farklı boyutlardaki dikdörtgen modüllerin birbiriyle kesiştiği, duvarda grafik bir derinlik oluşturan asimetrik yerleşim</li>
-                <li>İnce ve net hatlara sahip koyu tonlu yüzeylerle, sergilenen kitap ve objelerin formlarını ön plana çıkaran kontrast yapı</li>
-                <li>Doğrudan duvarla bütünleşen, mekanda ağırlık yapmayan havadar sergileme dili</li>
-                <li>Her modülün kendi içinde izole bir sergi alanı sunduğu, karmaşadan uzak ve disiplinli depolama kurgusu</li>
+                <li data-i18n="kitaplik-prod8-li1">
+                  Farklı boyutlardaki dikdörtgen modüllerin birbiriyle
+                  kesiştiği, duvarda grafik bir derinlik oluşturan asimetrik
+                  yerleşim
+                </li>
+                <li data-i18n="kitaplik-prod8-li2">
+                  İnce ve net hatlara sahip koyu tonlu yüzeylerle, sergilenen
+                  kitap ve objelerin formlarını ön plana çıkaran kontrast yapı
+                </li>
+                <li data-i18n="kitaplik-prod8-li3">
+                  Doğrudan duvarla bütünleşen, mekanda ağırlık yapmayan havadar
+                  sergileme dili
+                </li>
+                <li data-i18n="kitaplik-prod8-li4">
+                  Her modülün kendi içinde izole bir sergi alanı sunduğu,
+                  karmaşadan uzak ve disiplinli depolama kurgusu
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
-    <section class="products" id="kitaplık-9" data-scroll-color="dark">
+
+    <section class="products" id="kitaplik-9" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DİKEY RİTİM: MODÜLER PANEL KÜTÜPHANE</h2>
+          <h2 class="product-title" data-i18n="kitaplik-prod9-title">
+            DİKEY RİTİM: MODÜLER PANEL KÜTÜPHANE
+          </h2>
           <div class="image">
-            <img src="resimler/kitaplık/kitaplık-9.webp" width="590" height="350" loading="lazy" alt="Elegance Kitaplık" />
+            <img
+              src="resimler/kitaplık/kitaplık-9.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Kitaplık"
+              data-i18n="[alt]kitaplik-prod9-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Ahşap dikey panellere entegre edilmiş, kitapları güvenle kavrayan ve havada süzülme hissi veren özgün raf geometrisi</li>
-                <li>Duvarı bölümlere ayıran masif görünümlü dikey bloklarla, yaşam alanına mimari bir düzen ve derinlik katan yerleşim</li>
-                <li>Yan yana gelen panellerin oluşturduğu tekrarlı ritim sayesinde, her duvar genişliğine uyarlanabilen esnek sergileme alanı</li>
-                <li>Doğal ahşap dokusunun sadeliğini ön plana çıkaran, karmaşadan uzak ve profesyonel kütüphane disiplini</li>
+                <li data-i18n="kitaplik-prod9-li1">
+                  Ahşap dikey panellere entegre edilmiş, kitapları güvenle
+                  kavrayan ve havada süzülme hissi veren özgün raf geometrisi
+                </li>
+                <li data-i18n="kitaplik-prod9-li2">
+                  Duvarı bölümlere ayıran masif görünümlü dikey bloklarla, yaşam
+                  alanına mimari bir düzen ve derinlik katan yerleşim
+                </li>
+                <li data-i18n="kitaplik-prod9-li3">
+                  Yan yana gelen panellerin oluşturduğu tekrarlı ritim
+                  sayesinde, her duvar genişliğine uyarlanabilen esnek sergileme
+                  alanı
+                </li>
+                <li data-i18n="kitaplik-prod9-li4">
+                  Doğal ahşap dokusunun sadeliğini ön plana çıkaran, karmaşadan
+                  uzak ve profesyonel kütüphane disiplini
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <section class="product-footer">
       <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları Saklıdır.
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
     </button>
+
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

@@ -1,9 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,120 +17,237 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Sloganlarımız</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-slogan">
+      Sloganımız | Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-
-      <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
-<section class="products" id="sloganlar" data-scroll-color="dark">
-  <div class="product-box-container">
-    <div class="box-product-item">
-
-      <div class="image-group">
-        <div class="image">
-          <img src="resimler/hakkimizda/slogan.webp" width="590" height="350" loading="lazy" alt="Sloganlar" />
+    <section class="products" id="sloganlar" data-scroll-color="dark">
+      <div class="product-box-container">
+        <div class="box-product-item">
+          <div class="image-group">
+            <div class="image">
+              <img
+                src="resimler/hakkimizda/slogan.webp"
+                width="590"
+                height="350"
+                loading="lazy"
+                alt="Sloganlar"
+                data-i18n="[alt]slogans-alt"
+              />
+            </div>
+          </div>
+          <div class="product-box-bottom">
+            <div class="info">
+              <h2 class="product-title" data-i18n="slogans-title">
+                SLOGANLARIMIZ
+              </h2>
+              <p class="urun" data-i18n="slogans-description">
+                "Farklı yaşamak için farklıyız" ilkesi doğrultusunda hareket
+                ediyoruz. Günümüz kitle üretiminde farklılığın yeterince
+                yansıtılamadığı durumlarda, bireylerin kendi yaşam tarzlarını
+                özgün biçimde ifade edebilmeleri için çözümler sunuyoruz. Her
+                bireyin yaşam alanında kendi farklılığını yansıtma hakkı
+                olduğuna inanıyoruz.
+              </p>
+              <ul
+                class="principles-list"
+                style="list-style-type: none; padding-left: 0"
+              >
+                <li class="principle-item">
+                  <strong data-i18n="slogans-li1-bold"
+                    >5.1 Özgün Yaşam Anlayışı:</strong
+                  >
+                  <span data-i18n="slogans-li1-text"
+                    >Kullanıcıların kendilerine has yaşam tarzlarını yansıtan
+                    tasarımlar geliştirmeyi hedefler.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="slogans-li2-bold"
+                    >5.2 Farklılığın Değeri:</strong
+                  >
+                  <span data-i18n="slogans-li2-text"
+                    >Her bireyin kendine özgü tercih ve beklentilerini merkeze
+                    alarak farklılığın kurumsal bir değer olduğunu
+                    vurgular.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="slogans-li3-bold"
+                    >5.3 Yaşam Kalitesini Yükseltme:</strong
+                  >
+                  <span data-i18n="slogans-li3-text"
+                    >Estetik ve fonksiyonelliği bir arada sunarak kullanıcıların
+                    yaşam alanlarında daha nitelikli bir deneyim elde etmesini
+                    sağlar.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="product-box-bottom">
-        <div class="info">
-          <h2 class="product-title">SLOGANLARIMIZ</h2>
-
-          <p class="urun">
-            "Farklı yaşamak için farklıyız" ilkesi doğrultusunda hareket ediyoruz. 
-            Günümüz kitle üretiminde farklılığın yeterince yansıtılamadığı durumlarda, 
-            bireylerin kendi yaşam tarzlarını özgün biçimde ifade edebilmeleri için çözümler sunuyoruz. 
-            Her bireyin yaşam alanında kendi farklılığını yansıtma hakkı olduğuna inanıyoruz.
-          </p>
-
-          <ul class="principles-list" style="list-style-type: none; padding-left: 0">
-            <li class="principle-item">
-              <strong>5.1 Özgün Yaşam Anlayışı:</strong> Kullanıcıların kendilerine has yaşam tarzlarını 
-              yansıtan tasarımlar geliştirmeyi hedefler.
-            </li>
-
-            <li class="principle-item">
-              <strong>5.2 Farklılığın Değeri:</strong> Her bireyin kendine özgü tercih ve beklentilerini 
-              merkeze alarak farklılığın kurumsal bir değer olduğunu vurgular.
-            </li>
-
-            <li class="principle-item">
-              <strong>5.3 Yaşam Kalitesini Yükseltme:</strong> Estetik ve fonksiyonelliği bir arada sunarak 
-              kullanıcıların yaşam alanlarında daha nitelikli bir deneyim elde etmesini sağlar.
-            </li>
-          </ul>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-    <section class="product-footer" data-scroll-color="dark">
-      <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları
-        Saklıdır.
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
+    <section class="product-footer" data-scroll-color="dark">
+      <div class="product-credit">
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
+      </div>
+    </section>
+
+    <button id="backToTop">
       <i class="fas fa-tools"></i>
     </button>
 
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

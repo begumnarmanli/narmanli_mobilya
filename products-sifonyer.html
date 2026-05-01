@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,89 +17,199 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Şifonyer</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-sifonyer">
+      Şifonyer - Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-       <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
     <section class="products" id="sifonyer-1" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">LİNEER MAKYAJ KONSOLU</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod1-title">
+            LİNEER MAKYAJ KONSOLU
+          </h2>
           <div class="image">
             <img
-              src="resimler/sifonyer/sifonyer-1.webp" 
+              src="resimler/sifonyer/sifonyer-1.webp"
               width="590"
               height="350"
               loading="lazy"
               alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod1-alt"
             />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Dairesel formun çevresine homojen şekilde yayılan, gölge oluşturmayan profesyonel makyaj ve bakım aydınlatması</li>
-                <li>Farklı derinliklerdeki çekmece ünitesi ile kozmetik ve kişisel aksesuarlar için kurgulanmış sistematik depolama çözümü</li>
-                <li>Mat beyaz gövde ile doğal meşe dokulu üst tablanın birleştiği, mekana sıcaklık ve zarafet katan minimal dokunuş</li>
-                <li>Metal iskeletli pufun ünite altına tam uyum sağlayan tasarımıyla, alan verimliliğini maksimize eden kompakt yerleşim</li>
+                <li data-i18n="sifonyer-prod1-li1">
+                  Dairesel formun çevresine homojen şekilde yayılan, gölge
+                  oluşturmayan profesyonel makyaj ve bakım aydınlatması
+                </li>
+                <li data-i18n="sifonyer-prod1-li2">
+                  Farklı derinliklerdeki çekmece ünitesi ile kozmetik ve kişisel
+                  aksesuarlar için kurgulanmış sistematik depolama çözümü
+                </li>
+                <li data-i18n="sifonyer-prod1-li3">
+                  Mat beyaz gövde ile doğal meşe dokulu üst tablanın birleştiği,
+                  mekana sıcaklık ve zarafet katan minimal dokunuş
+                </li>
+                <li data-i18n="sifonyer-prod1-li4">
+                  Metal iskeletli pufun ünite altına tam uyum sağlayan
+                  tasarımıyla, alan verimliliğini maksimize eden kompakt
+                  yerleşim
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -104,24 +220,47 @@
     <section class="products" id="sifonyer-2" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">NEO-KLASİK ANTRASİT ŞİFONYER</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod2-title">
+            NEO-KLASİK ANTRASİT ŞİFONYER
+          </h2>
           <div class="image">
-            <img src="resimler/sifonyer/sifonyer-2.webp" width="590" height="350" loading="lazy" alt="Elegance Şifonyer" />
+            <img
+              src="resimler/sifonyer/sifonyer-2.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod2-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Çekmece boyunca uzanan fırçalanmış altın rengi kulp detaylarıyla, antrasit gövde üzerinde oluşturulan asil görünüm</li>
-                <li>Doğal taş efektli gri üst yüzey ile çekmece panellerinin uyumu, mobilyaya mimari bir ağırlık ve karakter katar</li>
-                <li>Üç adet derin ve geniş saklama alanı ile yatak odasında yüksek kapasiteli depolama disiplini</li>
-                <li>Klasik mobilya işçiliğinin modern hatlarla harmanlandığı, kenar geçişlerinde estetik ve dayanıklılık sunan üretim kalitesi</li>
+                <li data-i18n="sifonyer-prod2-li1">
+                  Çekmece boyunca uzanan fırçalanmış altın rengi kulp
+                  detaylarıyla, antrasit gövde üzerinde oluşturulan asil görünüm
+                </li>
+                <li data-i18n="sifonyer-prod2-li2">
+                  Doğal taş efektli gri üst yüzey ile çekmece panellerinin
+                  uyumu, mobilyaya mimari bir ağırlık ve karakter katar
+                </li>
+                <li data-i18n="sifonyer-prod2-li3">
+                  Üç adet derin ve geniş saklama alanı ile yatak odasında yüksek
+                  kapasiteli depolama disiplini
+                </li>
+                <li data-i18n="sifonyer-prod2-li4">
+                  Klasik mobilya işçiliğinin modern hatlarla harmanlandığı,
+                  kenar geçişlerinde estetik ve dayanıklılık sunan üretim
+                  kalitesi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -132,24 +271,47 @@
     <section class="products" id="sifonyer-3" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">MODERN YATAK ODASI KONSOLU</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod3-title">
+            MODERN YATAK ODASI KONSOLU
+          </h2>
           <div class="image">
-            <img src="resimler/sifonyer/sifonyer-3.webp" width="590" height="350" loading="lazy" alt="Elegance Şifonyer" />
+            <img
+              src="resimler/sifonyer/sifonyer-3.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod3-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Gri tonların hakim olduğu, modern yatak odası dekorasyonuyla bütünleşen ve parmak izi bırakmayan özel yüzey teknolojisi</li>
-                <li>Derin çekmece ünitesiyle, tekstil ürünlerinden kişisel aksesuarlara kadar kurgulanmış sistematik depolama</li>
-                <li>Bir yanda çekmece bloğu, diğer yanda ise ince metal ayakla desteklenen geniş üst tabla sayesinde ekstra kullanım alanı</li>
-                <li>Yatay formda yerleştirilmiş kromajlı ince kulp tasarımlarıyla, kullanım kolaylığını estetik bir çizgiyle buluşturan üretim kalitesi</li>
+                <li data-i18n="sifonyer-prod3-li1">
+                  Gri tonların hakim olduğu, modern yatak odası dekorasyonuyla
+                  bütünleşen ve parmak izi bırakmayan özel yüzey teknolojisi
+                </li>
+                <li data-i18n="sifonyer-prod3-li2">
+                  Derin çekmece ünitesiyle, tekstil ürünlerinden kişisel
+                  aksesuarlara kadar kurgulanmış sistematik depolama
+                </li>
+                <li data-i18n="sifonyer-prod3-li3">
+                  Bir yanda çekmece bloğu, diğer yanda ise ince metal ayakla
+                  desteklenen geniş üst tabla sayesinde ekstra kullanım alanı
+                </li>
+                <li data-i18n="sifonyer-prod3-li4">
+                  Yatay formda yerleştirilmiş kromajlı ince kulp tasarımlarıyla,
+                  kullanım kolaylığını estetik bir çizgiyle buluşturan üretim
+                  kalitesi
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -160,24 +322,46 @@
     <section class="products" id="sifonyer-4" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">SİMETRİK ASALET</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod4-title">
+            SİMETRİK ASALET
+          </h2>
           <div class="image">
-            <img src="resimler/sifonyer/sifonyer-4.webp" width="590" height="350" loading="lazy" alt="Elegance Şifonyer" />
+            <img
+              src="resimler/sifonyer/sifonyer-4.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod4-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Antrasit gövde ile mükemmel bir kontrast oluşturan, dayanıklı ve estetik beyaz mermer desenli üst tabla tasarımı</li>
-                <li>Eşit boyutlarda tasarlanmış 8 ayrı saklama alanı ile yüksek kapasiteli ve sistematik bir organizasyon disiplini</li>
-                <li>Koyu antrasit zemin üzerinde mücevher gibi parlayan, klasik mobilya sanatını modern dünyaya taşıyan zarif kulp işçiliği</li>
-                <li>Yan panellerde kullanılan kademeli mimari hatlar sayesinde, odanın odak noktası haline gelen sağlam ve karakteristik gövde</li>
+                <li data-i18n="sifonyer-prod4-li1">
+                  Antrasit gövde ile mükemmel bir kontrast oluşturan, dayanıklı
+                  ve estetik beyaz mermer desenli üst tabla tasarımı
+                </li>
+                <li data-i18n="sifonyer-prod4-li2">
+                  Eşit boyutlarda tasarlanmış 8 ayrı saklama alanı ile yüksek
+                  kapasiteli ve sistematik bir organizasyon disiplini
+                </li>
+                <li data-i18n="sifonyer-prod4-li3">
+                  Koyu antrasit zemin üzerinde mücevher gibi parlayan, klasik
+                  mobilya sanatını modern dünyaya taşıyan zarif kulp işçiliği
+                </li>
+                <li data-i18n="sifonyer-prod4-li4">
+                  Yan panellerde kullanılan kademeli mimari hatlar sayesinde,
+                  odanın odak noktası haline gelen sağlam ve karakteristik gövde
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -188,7 +372,9 @@
     <section class="products" id="sifonyer-5" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">DOĞAL MEŞE ŞİFONYER</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod5-title">
+            DOĞAL MEŞE ŞİFONYER
+          </h2>
           <div class="image">
             <img
               src="resimler/sifonyer/sifonyer-5.webp"
@@ -196,22 +382,37 @@
               height="350"
               loading="lazy"
               alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod5-alt"
             />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Sıcak meşe kaplama yüzeylerin, endüstriyel siyah metal ayak yapısıyla buluştuğu dengeli materyal kompozisyonu</li>
-                <li>Simetrik yerleşimli derin çekmece ünitesiyle, tekstil ve kişisel eşyalar için kurgulanmış yüksek kapasiteli depolama disiplini</li>
-                <li>Mobilyayı yerden yükselten metal iskelet sayesinde, temizlik kolaylığı sağlayan ve odaya ferahlık katan ergonomik tasarım</li>
-                <li>Yüzeyle bütünleşik, görsel kalabalığı engelleyen ve ahşabın doğal harelerini kesintiye uğratmayan modern kulp işçiliği</li>
+                <li data-i18n="sifonyer-prod5-li1">
+                  Sıcak meşe kaplama yüzeylerin, endüstriyel siyah metal ayak
+                  yapısıyla buluştuğu dengeli materyal kompozisyonu
+                </li>
+                <li data-i18n="sifonyer-prod5-li2">
+                  Simetrik yerleşimli derin çekmece ünitesiyle, tekstil ve
+                  kişisel eşyalar için kurgulanmış yüksek kapasiteli depolama
+                  disiplini
+                </li>
+                <li data-i18n="sifonyer-prod5-li3">
+                  Mobilyayı yerden yükselten metal iskelet sayesinde, temizlik
+                  kolaylığı sağlayan ve odaya ferahlık katan ergonomik tasarım
+                </li>
+                <li data-i18n="sifonyer-prod5-li4">
+                  Yüzeyle bütünleşik, görsel kalabalığı engelleyen ve ahşabın
+                  doğal harelerini kesintiye uğratmayan modern kulp işçiliği
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -222,24 +423,48 @@
     <section class="products" id="sifonyer-6" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">SAFİR ASALET</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod6-title">
+            SAFİR ASALET
+          </h2>
           <div class="image">
-            <img src="resimler/sifonyer/sifonyer-6.webp" width="590" height="350" loading="lazy" alt="Elegance Şifonyer" />
+            <img
+              src="resimler/sifonyer/sifonyer-6.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod6-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Gece mavisi gövde üzerinde mücevher gibi parlayan pirinç kulp detaylarıyla, lüks ve sofistike bir atmosfer yaratan renk paleti</li>
-                <li>Antik mermer desenli üst yüzeyiyle dayanıklılığı ve estetiği birleştiren, premium malzeme kompozisyonu</li>
-                <li>Simetrik yerleşimli geniş çekmece ünitesiyle, kişisel aksesuarlar için kurgulanmış yüksek kapasiteli depolama disiplini</li>
-                <li>Klasik mobilya işçiliğinin modern hatlarla harmanlandığı, yan panellerdeki kademeli geçişlerle karakter kazanan duruş</li>
+                <li data-i18n="sifonyer-prod6-li1">
+                  Gece mavisi gövde üzerinde mücevher gibi parlayan pirinç kulp
+                  detaylarıyla, lüks ve sofistike bir atmosfer yaratan renk
+                  paleti
+                </li>
+                <li data-i18n="sifonyer-prod6-li2">
+                  Antik mermer desenli üst yüzeyiyle dayanıklılığı ve estetiği
+                  birleştiren, premium malzeme kompozisyonu
+                </li>
+                <li data-i18n="sifonyer-prod6-li3">
+                  Simetrik yerleşimli geniş çekmece ünitesiyle, kişisel
+                  aksesuarlar için kurgulanmış yüksek kapasiteli depolama
+                  disiplini
+                </li>
+                <li data-i18n="sifonyer-prod6-li4">
+                  Klasik mobilya işçiliğinin modern hatlarla harmanlandığı, yan
+                  panellerdeki kademeli geçişlerle karakter kazanan duruş
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -250,24 +475,46 @@
     <section class="products" id="sifonyer-7" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">MERMER TABLALI ŞİFONYER</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod7-title">
+            MERMER TABLALI ŞİFONYER
+          </h2>
           <div class="image">
-            <img src="resimler/sifonyer/sifonyer-7.webp" width="590" height="350" loading="lazy" alt="Elegance Şifonyer" />
+            <img
+              src="resimler/sifonyer/sifonyer-7.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod7-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Beyaz gövde üzerinde mücevher gibi parlayan dairesel pirinç kulplarla, klasik sanatı modernize eden detay işçiliği</li>
-                <li>Estetik ve dayanıklılığı birleştiren beyaz mermer desenli tabla ile yatak odasına premium bir değer katan malzeme seçimi</li>
-                <li>Aksesuarlar ve tekstil ürünleri için kurgulanmış, farklı hacimlerde beş adet fonksiyonel çekmece bölmesi</li>
-                <li>İnce oyma detayları ve taçlı üst yapısıyla odaya karakter katan, heybetli ve zamansız bir tasarım dili</li>
+                <li data-i18n="sifonyer-prod7-li1">
+                  Beyaz gövde üzerinde mücevher gibi parlayan dairesel pirinç
+                  kulplarla, klasik sanatı modernize eden detay işçiliği
+                </li>
+                <li data-i18n="sifonyer-prod7-li2">
+                  Estetik ve dayanıklılığı birleştiren beyaz mermer desenli
+                  tabla ile yatak odasına premium bir değer katan malzeme seçimi
+                </li>
+                <li data-i18n="sifonyer-prod7-li3">
+                  Aksesuarlar ve tekstil ürünleri için kurgulanmış, farklı
+                  hacimlerde beş adet fonksiyonel çekmece bölmesi
+                </li>
+                <li data-i18n="sifonyer-prod7-li4">
+                  İnce oyma detayları ve taçlı üst yapısıyla odaya karakter
+                  katan, heybetli ve zamansız bir tasarım dili
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -278,51 +525,96 @@
     <section class="products" id="sifonyer-8" data-scroll-color="light">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">ANTİK DETAYLI MAKYAJ MASASI</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod8-title">
+            ANTİK DETAYLI MAKYAJ MASASI
+          </h2>
           <div class="image">
-            <img src="resimler/sifonyer/sifonyer-8.webp" width="590" height="350" loading="lazy" alt="Elegance Şifonyer" />
+            <img
+              src="resimler/sifonyer/sifonyer-8.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod8-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Aristokrat bir atmosfer yaratan mat lacivert gövde ve üzerinde mücevher gibi parlayan fırçalanmış pirinç kulp tasarımları</li>
-                <li>Dayanıklılığı estetikle buluşturan, premium bir kullanım alanı sunan ve sergileme kapasitesini artıran beyaz mermer yüzey</li>
-                <li>Farklı hacimlerdeki yedi çekmece ile sistematik ve yüksek kapasiteli depolama</li>
-                <li>Geleneksel oyma detaylarını modern hatlarla birleştiren, zamansız ve heybetli gövde</li>
+                <li data-i18n="sifonyer-prod8-li1">
+                  Aristokrat bir atmosfer yaratan mat lacivert gövde ve üzerinde
+                  mücevher gibi parlayan fırçalanmış pirinç kulp tasarımları
+                </li>
+                <li data-i18n="sifonyer-prod8-li2">
+                  Dayanıklılığı estetikle buluşturan, premium bir kullanım alanı
+                  sunan ve sergileme kapasitesini artıran beyaz mermer yüzey
+                </li>
+                <li data-i18n="sifonyer-prod8-li3">
+                  Farklı hacimlerdeki yedi çekmece ile sistematik ve yüksek
+                  kapasiteli depolama
+                </li>
+                <li data-i18n="sifonyer-prod8-li4">
+                  Geleneksel oyma detaylarını modern hatlarla birleştiren,
+                  zamansız ve heybetli gövde
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <section class="products" id="sifonyer-9" data-scroll-color="dark">
       <div class="product-box-container">
         <div class="box-product-item">
-          <h2 class="product-title">GEOMETRİK BAKIM MODÜLÜ</h2>
+          <h2 class="product-title" data-i18n="sifonyer-prod9-title">
+            GEOMETRİK BAKIM MODÜLÜ
+          </h2>
           <div class="image">
-            <img src="resimler/sifonyer/sifonyer-9.webp" width="590" height="350" loading="lazy" alt="Elegance Şifonyer" />
+            <img
+              src="resimler/sifonyer/sifonyer-9.webp"
+              width="590"
+              height="350"
+              loading="lazy"
+              alt="Elegance Şifonyer"
+              data-i18n="[alt]sifonyer-prod9-alt"
+            />
           </div>
           <div class="product-box-head"></div>
           <div class="product-box-bottom">
             <div class="info">
               <ul class="product-list">
-                <li>Dairesel ayna çevresine homojen yayılan, gölge oluşturmayan profesyonel aydınlatma</li>
-                <li>Meşe tabla ile bütünleşen dokuz çekmeceli sistematik depolama matrisi</li>
-                <li>Mat beyaz gövde, doğal meşe doku ve gri döşemeli pufun kompozisyonu</li>
-                <li>Modül altına tam uyum sağlayan, alan verimliliği kurgulanmış kompakt oturum çözümü</li>
+                <li data-i18n="sifonyer-prod9-li1">
+                  Dairesel ayna çevresine homojen yayılan, gölge oluşturmayan
+                  profesyonel aydınlatma
+                </li>
+                <li data-i18n="sifonyer-prod9-li2">
+                  Meşe tabla ile bütünleşen dokuz çekmeceli sistematik depolama
+                  matrisi
+                </li>
+                <li data-i18n="sifonyer-prod9-li3">
+                  Mat beyaz gövde, doğal meşe doku ve gri döşemeli pufun
+                  kompozisyonu
+                </li>
+                <li data-i18n="sifonyer-prod9-li4">
+                  Modül altına tam uyum sağlayan, alan verimliliği kurgulanmış
+                  kompakt oturum çözümü
+                </li>
               </ul>
             </div>
             <a
               href="https://wa.me/905057379044"
               target="_blank"
               class="product-info-btn"
+              data-i18n="product-detail-btn"
               >Detaylı Bilgi Alın</a
             >
           </div>
@@ -332,13 +624,18 @@
 
     <section class="product-footer">
       <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları Saklıdır.
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+    <button id="backToTop">
+      <i class="fas fa-tools"></i>
     </button>
+
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

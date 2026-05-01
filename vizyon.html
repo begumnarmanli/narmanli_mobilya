@@ -1,9 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,120 +17,270 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Vizyonumuz</title>
-        <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
+    <title data-i18n-title-tag="page-title-vizyon">
+      Vizyonumuz | Narmanlı Mobilya
+    </title>
+    <link rel="icon" type="image/png" href="resimler/icons/tools.svg" />
     <link rel="apple-touch-icon" href="resimler/icons/tools.svg" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
-
-      <header class="header">
+    <header class="header">
       <a href="#" class="logo">
-        <img src="resimler/hakkimizda/logo-koyu.webp" width="140" height="65" alt="Narmanlı Mobilya"/>
+        <img
+          src="resimler/hakkimizda/logo-koyu.webp"
+          width="140"
+          height="65"
+          alt="Narmanlı Mobilya"
+        />
       </a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html" data-i18n="nav-home">Anasayfa</a>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Ürünlerimiz</a>
+          <a href="#" class="dropbtn" data-i18n="nav-products">Ürünlerimiz</a>
           <ul class="dropdown-content">
-            <li><a href="products-mutfak.html">MUTFAK</a></li>
-            <li><a href="products-banyo.html#banyo">BANYO</a></li>
-            <li><a href="products-vestiyer.html#vestiyer">VESTİYER</a></li>
-            <li><a href="products-komodin.html#komodin">KOMODİN</a></li>
-            <li><a href="products-gardırop.html#gardirob">GARDIROP</a></li>
-            <li><a href="products-kitaplık.html#kitaplik">KİTAPLIK</a></li>
-            <li><a href="products-sifonyer.html#sifonyer">ŞİFONYER</a></li>
             <li>
-              <a href="products-dusmeyatak.html#dusme-yatak">DÜŞME YATAK</a>
+              <a href="products-mutfak.html" data-i18n="nav-mutfak">MUTFAK</a>
+            </li>
+            <li>
+              <a href="products-banyo.html#banyo" data-i18n="nav-banyo"
+                >BANYO</a
+              >
+            </li>
+            <li>
+              <a href="products-vestiyer.html#vestiyer" data-i18n="nav-vestiyer"
+                >VESTİYER</a
+              >
+            </li>
+            <li>
+              <a href="products-komodin.html#komodin" data-i18n="nav-komodin"
+                >KOMODİN</a
+              >
+            </li>
+            <li>
+              <a href="products-gardırop.html#gardirob" data-i18n="nav-gardırop"
+                >GARDIROP</a
+              >
+            </li>
+            <li>
+              <a href="products-kitaplık.html#kitaplik" data-i18n="nav-kitaplik"
+                >KİTAPLIK</a
+              >
+            </li>
+            <li>
+              <a href="products-sifonyer.html#sifonyer" data-i18n="nav-sifonyer"
+                >ŞİFONYER</a
+              >
+            </li>
+            <li>
+              <a
+                href="products-dusmeyatak.html#dusme-yatak"
+                data-i18n="nav-dusme-yatak"
+                >DÜŞME YATAK</a
+              >
             </li>
           </ul>
         </div>
+
         <div class="dropdown">
-          <a href="#" class="dropbtn">Hakkımızda</a>
+          <a href="#" class="dropbtn" data-i18n="nav-about">Hakkımızda</a>
           <ul class="dropdown-content">
-            <li><a href="kurumsal-ilkeler.html">KURUMSAL İLKELERİMİZ</a></li>
-            <li><a href="vizyon.html">VİZYONUMUZ</a></li>
-            <li><a href="misyon.html">MİSYONUMUZ</a></li>
-            <li><a href="urun-konseptleri.html">ÜRÜN KONSEPTLERİMİZ</a></li>
-            <li><a href="slogan.html">SLOGANIMIZ</a></li>
+            <li>
+              <a href="kurumsal-ilkeler.html" data-i18n="nav-kurumsal"
+                >KURUMSAL İLKELERİMİZ</a
+              >
+            </li>
+            <li><a href="vizyon.html" data-i18n="nav-vizyon">VİZYONUMUZ</a></li>
+            <li><a href="misyon.html" data-i18n="nav-misyon">MİSYONUMUZ</a></li>
+            <li>
+              <a href="urun-konseptleri.html" data-i18n="nav-urun-konsept"
+                >ÜRÜN KONSEPTLERİMİZ</a
+              >
+            </li>
+            <li><a href="slogan.html" data-i18n="nav-slogan">SLOGANIMIZ</a></li>
           </ul>
         </div>
+
         <a
           href="https://wa.me/905057379044"
           target="_blank"
           rel="noopener"
           class="whatsapp-btn whatsapp-mobile"
+          data-i18n="nav-whatsapp"
           >Teklif Alın</a
         >
       </nav>
-      <a
-        href="https://wa.me/905057379044"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp-btn whatsapp-desktop"
-        >Teklif Alın</a
-      >
+
+      <div class="header-right">
+        <div class="lang-switcher-wrapper">
+          <div id="lang-switcher">
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLangDropdown()"
+              aria-label="Dil seç"
+            >
+              <i class="fas fa-globe"></i>
+              <span id="current-lang-label">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="lang-dropdown" role="menu">
+              <button
+                class="lang-option active"
+                data-lang="tr"
+                onclick="setLang('tr')"
+                role="menuitem"
+              >
+                TR
+              </button>
+              <button
+                class="lang-option"
+                data-lang="en"
+                onclick="setLang('en')"
+                role="menuitem"
+              >
+                EN
+              </button>
+              <button
+                class="lang-option"
+                data-lang="ru"
+                onclick="setLang('ru')"
+                role="menuitem"
+              >
+                RU
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a
+          href="https://wa.me/905057379044"
+          target="_blank"
+          rel="noopener"
+          class="whatsapp-btn whatsapp-desktop"
+          data-i18n="nav-whatsapp"
+          >Teklif Alın</a
+        >
+      </div>
     </header>
 
-<section class="products" id="Vizyon" data-scroll-color="dark">
-  <div class="product-box-container">
-    <div class="box-product-item">
-      <div class="image-group">
-        <div class="image">
-          <img src="resimler/hakkimizda/vizyon.webp" width="590" height="350" loading="lazy" alt="Vizyonumuz" />
+    <section class="products" id="Vizyon" data-scroll-color="dark">
+      <div class="product-box-container">
+        <div class="box-product-item">
+          <div class="image-group">
+            <div class="image">
+              <img
+                src="resimler/hakkimizda/vizyon.webp"
+                width="590"
+                height="350"
+                loading="lazy"
+                alt="Vizyonumuz"
+                data-i18n="[alt]vision-alt"
+              />
+            </div>
+          </div>
+          <div class="product-box-bottom">
+            <div class="info">
+              <h2 class="product-title" data-i18n="vision-title">VİZYONUMUZ</h2>
+              <ul
+                class="principles-list"
+                style="list-style-type: none; padding-left: 0"
+              >
+                <li class="principle-item">
+                  <strong data-i18n="vision-li1-bold">ULUSAL LİDERLİK:</strong>
+                  <span data-i18n="vision-li1-text"
+                    >Doğal sınıfında önümüzdeki beş yıl içinde ulusal pazarda
+                    ilk üçe girerek sektöre yön vermeyi ve liderliğini koruyarak
+                    yenilikçi yapısını sürdürmeyi hedeflemektedir.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="vision-li2-bold"
+                    >ULUSLARARASI HEDEF:</strong
+                  >
+                  <span data-i18n="vision-li2-text"
+                    >Uzun vadede uluslararası pazarlarda da lider konuma
+                    yükselmeyi amaçlamaktadır.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="vision-li3-bold"
+                    >İNOVASYON ve AR-GE:</strong
+                  >
+                  <span data-i18n="vision-li3-text"
+                    >Yeni ürün tasarımları ve teknolojik çözümlerle sektörde
+                    fark yaratmak.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="vision-li4-bold"
+                    >SÜRDÜRÜLEBİLİRLİK:</strong
+                  >
+                  <span data-i18n="vision-li4-text"
+                    >Çevre dostu üretim süreçleri ve malzeme kullanımı ile
+                    ekosisteme saygılı bir marka olmak.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="vision-li5-bold">MÜŞTERİ DENEYİMİ:</strong>
+                  <span data-i18n="vision-li5-text"
+                    >Müşteri memnuniyetini sürekli artırmak ve marka bağlılığını
+                    güçlendirmek.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="vision-li6-bold">ÇALIŞAN GELİŞİMİ:</strong>
+                  <span data-i18n="vision-li6-text"
+                    >Çalışanların yetkinliklerini artırarak takım ruhunu ve
+                    kurumsal kültürü güçlendirmek.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="vision-li7-bold">DİJİTAL DÖNÜŞÜM:</strong>
+                  <span data-i18n="vision-li7-text"
+                    >Dijitalleşme ve akıllı çözümlerle verimliliği artırmak ve
+                    sektörde öncü olmak.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="vision-li8-bold"
+                    >GLOBAL MARKA İMAJI:</strong
+                  >
+                  <span data-i18n="vision-li8-text"
+                    >Uluslararası pazarlarda tanınan ve tercih edilen bir marka
+                    olmak.</span
+                  >
+                </li>
+                <li class="principle-item">
+                  <strong data-i18n="vision-li9-bold">TOPLUMSAL KATKI:</strong>
+                  <span data-i18n="vision-li9-text"
+                    >Sosyal sorumluluk projeleriyle topluma ve sektöre değer
+                    katmak.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="product-box-bottom">
-        <div class="info">
-          <h2 class="product-title">VİZYONUMUZ</h2>
-          <ul class="principles-list" style="list-style-type: none; padding-left: 0">
-              <li class="principle-item">
-    <strong>ULUSAL LİDERLİK:</strong> Doğal sınıfında önümüzdeki beş yıl içinde ulusal pazarda ilk üçe girerek sektöre yön vermeyi ve liderliğini koruyarak yenilikçi yapısını sürdürmeyi hedeflemektedir.
-  </li>
-  <li class="principle-item">
-    <strong>ULUSLARARASI HEDEF:</strong> Uzun vadede uluslararası pazarlarda da lider konuma yükselmeyi amaçlamaktadır.
-  </li>
-            <li class="principle-item">
-              <strong>İNOVASYON ve AR-GE:</strong> Yeni ürün tasarımları ve teknolojik çözümlerle sektörde fark yaratmak.
-            </li>
-            <li class="principle-item">
-              <strong>SÜRDÜRÜLEBİLİRLİK:</strong> Çevre dostu üretim süreçleri ve malzeme kullanımı ile ekosisteme saygılı bir marka olmak.
-            </li>
-            <li class="principle-item">
-              <strong>MÜŞTERİ DENEYİMİ:</strong> Müşteri memnuniyetini sürekli artırmak ve marka bağlılığını güçlendirmek.
-            </li>
-            <li class="principle-item">
-              <strong>ÇALIŞAN GELİŞİMİ:</strong> Çalışanların yetkinliklerini artırarak takım ruhunu ve kurumsal kültürü güçlendirmek.
-            </li>
-            <li class="principle-item">
-              <strong>DİJİTAL DÖNÜŞÜM:</strong> Dijitalleşme ve akıllı çözümlerle verimliliği artırmak ve sektörde öncü olmak.
-            </li>
-            <li class="principle-item">
-              <strong>GLOBAL MARKA İMAJI:</strong> Uluslararası pazarlarda tanınan ve tercih edilen bir marka olmak.
-            </li>
-            <li class="principle-item">
-              <strong>TOPLUMSAL KATKI:</strong> Sosyal sorumluluk projeleriyle topluma ve sektöre değer katmak.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section class="product-footer" data-scroll-color="dark">
-      <div class="product-credit">
-        <span>Begüm Narmanlı tarafından tasarlanmıştır.</span> Tüm Hakları
-        Saklıdır.
       </div>
     </section>
 
-    <button id="backToTop" title="Yukarı Çık">
+    <section class="product-footer" data-scroll-color="dark">
+      <div class="product-credit">
+        <span data-i18n="product-footer"
+          >Begüm Narmanlı tarafından tasarlanmıştır. | Tüm Hakları
+          Saklıdır.</span
+        >
+      </div>
+    </section>
+
+    <button id="backToTop">
       <i class="fas fa-tools"></i>
     </button>
 
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

@@ -40,9 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const phoneInput = document.querySelector(
-    'input[placeholder="Telefon Numarası"]',
-  );
+  const phoneInput = document.getElementById("phone");
 
   if (phoneInput) {
     phoneInput.addEventListener("keydown", (event) => {
@@ -75,9 +73,21 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
       }
     });
+
     phoneInput.addEventListener("input", () => {
       phoneInput.value = phoneInput.value.replace(/[^0-9]/g, "");
     });
+  }
+
+  function getBlogBtnText(key) {
+    if (window.currentTranslations && window.currentTranslations[key]) {
+      return window.currentTranslations[key];
+    }
+    const defaults = {
+      "blog-btn": "Devamını Oku",
+      "blog-btn-less": "Daha Az Oku",
+    };
+    return defaults[key];
   }
 
   const blogButtons = document.querySelectorAll(".blog-btn");
@@ -99,19 +109,19 @@ document.addEventListener("DOMContentLoaded", () => {
         .forEach((p) => {
           p.classList.remove("expanded");
           const parentBox = p.closest(".box");
-          if (parentBox) {
-            parentBox.classList.remove("expanded");
-          }
+          if (parentBox) parentBox.classList.remove("expanded");
         });
 
       document.querySelectorAll(".blog-btn").forEach((btn) => {
-        btn.textContent = "Devamını Oku";
+        btn.textContent = getBlogBtnText("blog-btn");
+        btn.classList.remove("expanded-btn");
       });
 
       if (!isCurrentlyExpanded) {
         paragraph.classList.add("expanded");
         box.classList.add("expanded");
-        button.textContent = "Daha Az Oku";
+        button.textContent = getBlogBtnText("blog-btn-less");
+        button.classList.add("expanded-btn");
       }
     });
   });
@@ -130,13 +140,11 @@ document.addEventListener("DOMContentLoaded", () => {
         allExpandedParagraphs.forEach((p) => {
           p.classList.remove("expanded");
           const parentBox = p.closest(".box");
-          if (parentBox) {
-            parentBox.classList.remove("expanded");
-          }
+          if (parentBox) parentBox.classList.remove("expanded");
         });
 
         document.querySelectorAll(".blog-btn").forEach((btn) => {
-          btn.textContent = "Devamını Oku";
+          btn.textContent = getBlogBtnText("blog-btn");
         });
       }
     }
@@ -152,7 +160,6 @@ document.addEventListener("DOMContentLoaded", () => {
       event.stopPropagation();
       menu.classList.toggle("fa-times");
       navbar.classList.toggle("active");
-
       body.classList.toggle("no-scroll");
       html.classList.toggle("no-scroll");
     };
@@ -160,15 +167,16 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("click", (event) => {
       const isClickInsideMenu = navbar.contains(event.target);
       const isClickInsideButton = menu.contains(event.target);
+      const isClickOnDropdown = !!event.target.closest(".dropdown");
 
       if (
         !isClickInsideMenu &&
         !isClickInsideButton &&
+        !isClickOnDropdown &&
         navbar.classList.contains("active")
       ) {
         navbar.classList.remove("active");
         menu.classList.remove("fa-times");
-
         body.classList.remove("no-scroll");
         html.classList.remove("no-scroll");
       }
@@ -179,53 +187,42 @@ document.addEventListener("DOMContentLoaded", () => {
     ".header .navbar .dropdown .dropbtn",
   );
 
+  const allDropdowns = document.querySelectorAll(".header .navbar .dropdown");
+
   dropdownBtns.forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-      event.preventDefault();
+    ["click", "touchstart"].forEach((eventType) => {
+      btn.addEventListener(eventType, (event) => {
+        event.preventDefault();
+        event.stopPropagation();
 
-      const parentDropdown = btn.closest(".dropdown");
+        const parentDropdown = btn.closest(".dropdown");
 
-      if (parentDropdown) {
-        document
-          .querySelectorAll(".header .navbar .dropdown.active")
-          .forEach((activeDropdown) => {
-            if (activeDropdown !== parentDropdown) {
-              activeDropdown.classList.remove("active");
+        if (parentDropdown) {
+          allDropdowns.forEach((dropdown) => {
+            if (dropdown !== parentDropdown) {
+              dropdown.classList.remove("active");
             }
           });
 
-        parentDropdown.classList.toggle("active");
-      }
+          parentDropdown.classList.toggle("active");
+        }
+      });
     });
   });
 
-  const allDropdowns = document.querySelectorAll(".header .navbar .dropdown");
+  document.addEventListener("click", (event) => {
+    let clickedInsideDropdown = false;
 
-  if (allDropdowns.length > 0) {
-    document.addEventListener("click", (event) => {
-      let isClickInsideActiveDropdown = false;
-      let isClickOnDropdownButton = false;
-
-      allDropdowns.forEach((dropdown) => {
-        const dropbtn = dropdown.querySelector(".dropbtn");
-
-        if (
-          dropdown.classList.contains("active") &&
-          dropdown.contains(event.target)
-        ) {
-          isClickInsideActiveDropdown = true;
-        }
-
-        if (dropbtn && dropbtn.contains(event.target)) {
-          isClickOnDropdownButton = true;
-        }
-      });
-
-      if (!isClickInsideActiveDropdown && !isClickOnDropdownButton) {
-        allDropdowns.forEach((dropdown) => {
-          dropdown.classList.remove("active");
-        });
+    allDropdowns.forEach((dropdown) => {
+      if (dropdown.contains(event.target)) {
+        clickedInsideDropdown = true;
       }
     });
-  }
+
+    if (!clickedInsideDropdown) {
+      allDropdowns.forEach((dropdown) => {
+        dropdown.classList.remove("active");
+      });
+    }
+  });
 });
