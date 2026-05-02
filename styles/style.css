@@ -133,8 +133,8 @@ html.no-scroll {
 }
 
 .header .logo img {
-  width: 140px !important;
-  height: auto !important;
+  width: 85px !important;
+  height: 50px !important;
   display: block;
   object-fit: contain;
 }
@@ -1039,6 +1039,11 @@ html.no-scroll {
     transform: rotate(180deg);
   }
 
+  .header .logo img {
+    width: 140px !important;
+    height: 70px !important;
+  }
+
   .lang-switcher-wrapper {
     flex-shrink: 0;
     margin-left: 0.5rem;
@@ -1332,6 +1337,11 @@ html.no-scroll {
 
   .header .navbar .dropdown.active .dropbtn::after {
     transform: rotate(180deg);
+  }
+
+  .header .logo img {
+    width: 140px !important;
+    height: 75px !important;
   }
 
   .lang-switcher-wrapper {

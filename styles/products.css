@@ -29,8 +29,8 @@ html.no-scroll {
 }
 
 .header .logo img {
-  width: 140px !important;
-  height: auto !important;
+  width: 85px !important;
+  height: 50px !important;
   display: block;
   object-fit: contain;
 }
@@ -347,6 +347,11 @@ html.no-scroll {
     transform: rotate(180deg);
   }
 
+  .header .logo img {
+    width: 140px !important;
+    height: 70px !important;
+  }
+
   .dropdown-content {
     position: absolute;
     min-width: 134px;
@@ -499,6 +504,11 @@ html.no-scroll {
     justify-content: center;
     border: none;
     overflow: visible;
+  }
+
+  .header .logo img {
+    width: 140px !important;
+    height: 75px !important;
   }
 
   .whatsapp-mobile {
