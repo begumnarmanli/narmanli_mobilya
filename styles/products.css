@@ -29,7 +29,7 @@ html.no-scroll {
 }
 
 .header .logo img {
-  width: 85px !important;
+  width: 130px !important;
   height: 50px !important;
   display: block;
   object-fit: contain;
@@ -348,8 +348,8 @@ html.no-scroll {
   }
 
   .header .logo img {
-    width: 140px !important;
-    height: 70px !important;
+    width: 200px !important;
+    height: 75px !important;
   }
 
   .dropdown-content {
@@ -507,8 +507,8 @@ html.no-scroll {
   }
 
   .header .logo img {
-    width: 140px !important;
-    height: 75px !important;
+    width: 250px !important;
+    height: 100px !important;
   }
 
   .whatsapp-mobile {

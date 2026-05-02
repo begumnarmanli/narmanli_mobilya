@@ -133,7 +133,7 @@ html.no-scroll {
 }
 
 .header .logo img {
-  width: 85px !important;
+  width: 130px !important;
   height: 50px !important;
   display: block;
   object-fit: contain;
@@ -1040,8 +1040,8 @@ html.no-scroll {
   }
 
   .header .logo img {
-    width: 140px !important;
-    height: 70px !important;
+    width: 200px !important;
+    height: 75px !important;
   }
 
   .lang-switcher-wrapper {
@@ -1273,7 +1273,7 @@ html.no-scroll {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: clamp(70px, 8vw, 90px);
+    height: clamp(90px, 10vw, 110px);
     overflow: visible;
   }
 
@@ -1340,8 +1340,8 @@ html.no-scroll {
   }
 
   .header .logo img {
-    width: 140px !important;
-    height: 75px !important;
+    width: 250px !important;
+    height: 100px !important;
   }
 
   .lang-switcher-wrapper {
