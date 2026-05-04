@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://narmanlimobilya.com/sitemap.xml
