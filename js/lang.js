@@ -59,6 +59,17 @@ async function applyLang(lang) {
       currentLangLabel.textContent = lang.toUpperCase();
     }
 
+    // Meta description güncelle
+    const metaDescriptions = {
+      tr: "Narmanlı Mobilya - Antalya'da özel tasarım mutfak, banyo, gardırop ve daha fazlası. Sipariş üzerine üretim, butik mobilya çözümleri.",
+      en: "Narmanlı Furniture - Custom design kitchen, bathroom, wardrobe and more in Antalya, Turkey. Made-to-order, boutique furniture solutions.",
+      ru: "Нармanlı Мебель - Мебель на заказ в Анталье: кухни, ванные, шкафы и многое другое. Индивидуальный дизайн, бутиковые решения."
+    };
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && metaDescriptions[lang]) {
+      metaDesc.setAttribute("content", metaDescriptions[lang]);
+    }
+
     document.querySelectorAll(".blog-btn").forEach((btn) => {
       if (!btn.classList.contains("expanded-btn")) {
         btn.textContent = t["blog-btn"] || btn.textContent;

@@ -28,9 +28,6 @@ Projenin farklı cihazlardaki görünümü:
 | :---: | :---: | :---: |
 | ![Mobil](resimler/ekran-foto/mobil.webp) | ![Tablet](resimler/ekran-foto/tablet.webp) | ![Desktop](resimler/ekran-foto/desktop.webp) |
 
-## ⚖️ Yasal Uyarı (Disclaimer)
-Bu proje Begüm Narmanlı tarafından hazırlanmış bir **portfolyo çalışmasıdır**. Sitede yer alan müşteri isimleri ve yorumlar tamamen temsilidir; gerçek kişilerle bir ilgisi bulunmamaktadır.
-
 ---
 
 # 🛋️ Narmanlı Furniture - Web Design Project
@@ -63,6 +60,3 @@ Visual representation across different screen sizes:
 | Mobile | Tablet | Desktop |
 | :---: | :---: | :---: |
 | ![Mobile](resimler/ekran-foto/mobil.webp) | ![Tablet](resimler/ekran-foto/tablet.webp) | ![Desktop](resimler/ekran-foto/desktop.webp) |
-
-## ⚖️ Disclaimer
-This project is a **portfolio study** prepared by Begüm Narmanlı. The customer names and reviews on the site are purely representative; they have no relation to real people.

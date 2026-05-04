@@ -133,8 +133,8 @@ html.no-scroll {
 }
 
 .header .logo img {
-  width: 130px !important;
-  height: 50px !important;
+  width: 150px !important;
+  height: 65px !important;
   display: block;
   object-fit: contain;
 }
@@ -703,7 +703,10 @@ html.no-scroll {
   padding: 2rem 2.5rem;
   background-color: var(--black-color);
   border-radius: 15px;
-  height: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transition:
     transform 0.3s ease,
@@ -1040,8 +1043,8 @@ html.no-scroll {
   }
 
   .header .logo img {
-    width: 200px !important;
-    height: 75px !important;
+    width: 240px !important;
+    height: 90px !important;
   }
 
   .lang-switcher-wrapper {
@@ -1340,7 +1343,7 @@ html.no-scroll {
   }
 
   .header .logo img {
-    width: 250px !important;
+    width: 260px !important;
     height: 100px !important;
   }
 
@@ -1510,6 +1513,7 @@ html.no-scroll {
   .review .box-container {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     gap: 3rem;
     max-width: none;
   }
