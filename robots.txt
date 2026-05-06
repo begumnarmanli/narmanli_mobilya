@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://narmanlimobilya.com/sitemap.xml
+Sitemap: https://narmanlimobilya.com.tr/sitemap.xml
